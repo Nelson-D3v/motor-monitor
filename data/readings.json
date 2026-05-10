@@ -1,0 +1,1442 @@
+[
+  {
+    "equipment_id": "7abf18fc-6962-4612-adb6-2c6a1b3c09ef",
+    "timestamp": "2026-05-09T18:52:37.584016",
+    "raw_voltage": 3609.3,
+    "raw_current": 19056.7,
+    "raw_temperature": 1781.6,
+    "raw_vibration": 458.0,
+    "raw_rpm": 29.75,
+    "id": "5990df47-2af4-4cc2-b4c3-b3c5b61921a6"
+  },
+  {
+    "equipment_id": "7abf18fc-6962-4612-adb6-2c6a1b3c09ef",
+    "timestamp": "2026-05-09T19:22:37.584016",
+    "raw_voltage": 3265.2,
+    "raw_current": 20317.7,
+    "raw_temperature": 1955.4,
+    "raw_vibration": 379.1,
+    "raw_rpm": 29.36,
+    "id": "739c8c9d-a7c0-4d47-8886-060545d0f1fa"
+  },
+  {
+    "equipment_id": "7abf18fc-6962-4612-adb6-2c6a1b3c09ef",
+    "timestamp": "2026-05-09T19:52:37.584016",
+    "raw_voltage": 3241.8,
+    "raw_current": 21159.7,
+    "raw_temperature": 1732.2,
+    "raw_vibration": 416.4,
+    "raw_rpm": 29.26,
+    "id": "4aebfc6b-e1f5-423b-a5b4-01c382000276"
+  },
+  {
+    "equipment_id": "7abf18fc-6962-4612-adb6-2c6a1b3c09ef",
+    "timestamp": "2026-05-09T20:22:37.584016",
+    "raw_voltage": 3191.9,
+    "raw_current": 20427.1,
+    "raw_temperature": 1646.7,
+    "raw_vibration": 368.6,
+    "raw_rpm": 29.64,
+    "id": "20eda19f-b4b5-4185-a1bf-c253db142b6b"
+  },
+  {
+    "equipment_id": "7abf18fc-6962-4612-adb6-2c6a1b3c09ef",
+    "timestamp": "2026-05-09T20:52:37.584016",
+    "raw_voltage": 3113.0,
+    "raw_current": 20038.4,
+    "raw_temperature": 1828.0,
+    "raw_vibration": 391.3,
+    "raw_rpm": 30.5,
+    "id": "04683333-2f43-4690-9c9a-cd4322d049fc"
+  },
+  {
+    "equipment_id": "7abf18fc-6962-4612-adb6-2c6a1b3c09ef",
+    "timestamp": "2026-05-09T21:22:37.584016",
+    "raw_voltage": 3007.8,
+    "raw_current": 18095.8,
+    "raw_temperature": 1992.4,
+    "raw_vibration": 334.7,
+    "raw_rpm": 28.98,
+    "id": "d31c0821-11ca-42f5-a595-7b9c2edc8e7b"
+  },
+  {
+    "equipment_id": "7abf18fc-6962-4612-adb6-2c6a1b3c09ef",
+    "timestamp": "2026-05-09T21:52:37.584016",
+    "raw_voltage": 2977.8,
+    "raw_current": 18978.6,
+    "raw_temperature": 1944.8,
+    "raw_vibration": 352.5,
+    "raw_rpm": 29.95,
+    "id": "1a5713f4-6353-4c1a-9a67-4df5f39c3016"
+  },
+  {
+    "equipment_id": "7abf18fc-6962-4612-adb6-2c6a1b3c09ef",
+    "timestamp": "2026-05-09T22:22:37.584016",
+    "raw_voltage": 3143.7,
+    "raw_current": 20289.0,
+    "raw_temperature": 1848.2,
+    "raw_vibration": 414.9,
+    "raw_rpm": 29.38,
+    "id": "a4f9e19f-3161-4393-8c46-98f18f56a653"
+  },
+  {
+    "equipment_id": "7abf18fc-6962-4612-adb6-2c6a1b3c09ef",
+    "timestamp": "2026-05-09T22:52:37.584016",
+    "raw_voltage": 3412.0,
+    "raw_current": 19997.5,
+    "raw_temperature": 1698.6,
+    "raw_vibration": 486.0,
+    "raw_rpm": 28.78,
+    "id": "ccc3d127-3b7a-458c-9122-1a7dd3a7b5fa"
+  },
+  {
+    "equipment_id": "7abf18fc-6962-4612-adb6-2c6a1b3c09ef",
+    "timestamp": "2026-05-09T23:22:37.584016",
+    "raw_voltage": 3120.5,
+    "raw_current": 18167.2,
+    "raw_temperature": 1934.0,
+    "raw_vibration": 480.8,
+    "raw_rpm": 29.75,
+    "id": "0c94c4ff-2218-4ef0-a66f-d9d3b2540178"
+  },
+  {
+    "equipment_id": "7abf18fc-6962-4612-adb6-2c6a1b3c09ef",
+    "timestamp": "2026-05-09T23:52:37.584016",
+    "raw_voltage": 3068.9,
+    "raw_current": 18320.5,
+    "raw_temperature": 1908.6,
+    "raw_vibration": 344.5,
+    "raw_rpm": 29.14,
+    "id": "43bd22f7-3a6a-4623-b853-a377fb486300"
+  },
+  {
+    "equipment_id": "7abf18fc-6962-4612-adb6-2c6a1b3c09ef",
+    "timestamp": "2026-05-10T00:22:37.584016",
+    "raw_voltage": 3186.0,
+    "raw_current": 20638.5,
+    "raw_temperature": 2007.7,
+    "raw_vibration": 461.0,
+    "raw_rpm": 29.52,
+    "id": "379dc0f4-861c-4bf0-8077-8663c008064e"
+  },
+  {
+    "equipment_id": "7abf18fc-6962-4612-adb6-2c6a1b3c09ef",
+    "timestamp": "2026-05-10T00:52:37.584016",
+    "raw_voltage": 3070.7,
+    "raw_current": 18518.5,
+    "raw_temperature": 1686.9,
+    "raw_vibration": 362.1,
+    "raw_rpm": 30.55,
+    "id": "9cf6ac34-89df-494b-8332-07d9fe5bf911"
+  },
+  {
+    "equipment_id": "7abf18fc-6962-4612-adb6-2c6a1b3c09ef",
+    "timestamp": "2026-05-10T01:22:37.584016",
+    "raw_voltage": 3125.4,
+    "raw_current": 19219.4,
+    "raw_temperature": 1848.0,
+    "raw_vibration": 447.9,
+    "raw_rpm": 30.21,
+    "id": "039fd07b-c32d-46ea-ae90-2b5d9118ff0e"
+  },
+  {
+    "equipment_id": "7abf18fc-6962-4612-adb6-2c6a1b3c09ef",
+    "timestamp": "2026-05-10T01:52:37.584016",
+    "raw_voltage": 3210.2,
+    "raw_current": 20430.3,
+    "raw_temperature": 2015.2,
+    "raw_vibration": 454.4,
+    "raw_rpm": 30.14,
+    "id": "8eb6f4f1-ff17-4dff-80cb-f443891cefec"
+  },
+  {
+    "equipment_id": "7abf18fc-6962-4612-adb6-2c6a1b3c09ef",
+    "timestamp": "2026-05-10T02:22:37.584016",
+    "raw_voltage": 3248.9,
+    "raw_current": 21102.8,
+    "raw_temperature": 2006.0,
+    "raw_vibration": 477.1,
+    "raw_rpm": 30.33,
+    "id": "fe937a89-61f5-4648-9382-aac6472599c2"
+  },
+  {
+    "equipment_id": "7abf18fc-6962-4612-adb6-2c6a1b3c09ef",
+    "timestamp": "2026-05-10T02:52:37.584016",
+    "raw_voltage": 2967.0,
+    "raw_current": 20627.2,
+    "raw_temperature": 1626.0,
+    "raw_vibration": 405.3,
+    "raw_rpm": 29.61,
+    "id": "d5b8a806-4e24-4ece-807b-7be087f382be"
+  },
+  {
+    "equipment_id": "7abf18fc-6962-4612-adb6-2c6a1b3c09ef",
+    "timestamp": "2026-05-10T03:22:37.584016",
+    "raw_voltage": 3136.3,
+    "raw_current": 20294.9,
+    "raw_temperature": 1725.2,
+    "raw_vibration": 453.9,
+    "raw_rpm": 29.88,
+    "id": "e95c1c39-2ae5-4169-9bad-442145c0131b"
+  },
+  {
+    "equipment_id": "7abf18fc-6962-4612-adb6-2c6a1b3c09ef",
+    "timestamp": "2026-05-10T03:52:37.584016",
+    "raw_voltage": 3230.1,
+    "raw_current": 19236.9,
+    "raw_temperature": 1979.0,
+    "raw_vibration": 396.7,
+    "raw_rpm": 28.85,
+    "id": "3230042f-61a0-4883-b844-e369274822e1"
+  },
+  {
+    "equipment_id": "7abf18fc-6962-4612-adb6-2c6a1b3c09ef",
+    "timestamp": "2026-05-10T04:22:37.584016",
+    "raw_voltage": 2972.5,
+    "raw_current": 19917.6,
+    "raw_temperature": 1763.7,
+    "raw_vibration": 480.5,
+    "raw_rpm": 29.23,
+    "id": "715a1c05-f0a5-482f-b728-cf52aee5a00e"
+  },
+  {
+    "equipment_id": "7abf18fc-6962-4612-adb6-2c6a1b3c09ef",
+    "timestamp": "2026-05-10T04:52:37.584016",
+    "raw_voltage": 3184.8,
+    "raw_current": 18779.9,
+    "raw_temperature": 1590.6,
+    "raw_vibration": 355.1,
+    "raw_rpm": 29.75,
+    "id": "6416f1a9-4c10-414e-8301-6c475b1c3382"
+  },
+  {
+    "equipment_id": "7abf18fc-6962-4612-adb6-2c6a1b3c09ef",
+    "timestamp": "2026-05-10T05:22:37.584016",
+    "raw_voltage": 3244.6,
+    "raw_current": 18293.1,
+    "raw_temperature": 1598.2,
+    "raw_vibration": 487.2,
+    "raw_rpm": 29.04,
+    "id": "6f23580d-8fef-41d5-a4bf-ef4aa4a90e07"
+  },
+  {
+    "equipment_id": "7abf18fc-6962-4612-adb6-2c6a1b3c09ef",
+    "timestamp": "2026-05-10T05:52:37.584016",
+    "raw_voltage": 3168.1,
+    "raw_current": 18312.2,
+    "raw_temperature": 1748.6,
+    "raw_vibration": 400.0,
+    "raw_rpm": 30.21,
+    "id": "68af30d5-bc0a-4c3a-aeca-728ce680b00c"
+  },
+  {
+    "equipment_id": "7abf18fc-6962-4612-adb6-2c6a1b3c09ef",
+    "timestamp": "2026-05-10T06:22:37.584016",
+    "raw_voltage": 3021.2,
+    "raw_current": 19092.5,
+    "raw_temperature": 1658.0,
+    "raw_vibration": 437.2,
+    "raw_rpm": 30.2,
+    "id": "9a69bf7e-f80e-4a75-b12a-efc39b0dc07f"
+  },
+  {
+    "equipment_id": "7abf18fc-6962-4612-adb6-2c6a1b3c09ef",
+    "timestamp": "2026-05-10T06:52:37.584016",
+    "raw_voltage": 3212.0,
+    "raw_current": 19844.7,
+    "raw_temperature": 1624.2,
+    "raw_vibration": 381.0,
+    "raw_rpm": 28.98,
+    "id": "e6916fe5-adc9-4a55-b984-07f6ff210eb9"
+  },
+  {
+    "equipment_id": "7abf18fc-6962-4612-adb6-2c6a1b3c09ef",
+    "timestamp": "2026-05-10T07:22:37.584016",
+    "raw_voltage": 3057.4,
+    "raw_current": 19317.4,
+    "raw_temperature": 1836.7,
+    "raw_vibration": 389.2,
+    "raw_rpm": 29.75,
+    "id": "49594778-cc9e-458f-90d3-3e0bf87702f5"
+  },
+  {
+    "equipment_id": "7abf18fc-6962-4612-adb6-2c6a1b3c09ef",
+    "timestamp": "2026-05-10T07:52:37.584016",
+    "raw_voltage": 2975.3,
+    "raw_current": 18445.1,
+    "raw_temperature": 1641.6,
+    "raw_vibration": 479.7,
+    "raw_rpm": 29.82,
+    "id": "9cba6a29-a739-41a4-a36b-d891afa936dd"
+  },
+  {
+    "equipment_id": "7abf18fc-6962-4612-adb6-2c6a1b3c09ef",
+    "timestamp": "2026-05-10T08:22:37.584016",
+    "raw_voltage": 3172.4,
+    "raw_current": 20867.5,
+    "raw_temperature": 1643.8,
+    "raw_vibration": 359.2,
+    "raw_rpm": 30.44,
+    "id": "a1ae3432-54fa-4446-9835-ecdc8df8a440"
+  },
+  {
+    "equipment_id": "7abf18fc-6962-4612-adb6-2c6a1b3c09ef",
+    "timestamp": "2026-05-10T08:52:37.584016",
+    "raw_voltage": 3126.1,
+    "raw_current": 19491.7,
+    "raw_temperature": 1779.0,
+    "raw_vibration": 425.4,
+    "raw_rpm": 29.16,
+    "id": "0c9eaa3c-01be-4e61-800a-5a73c8014f03"
+  },
+  {
+    "equipment_id": "7abf18fc-6962-4612-adb6-2c6a1b3c09ef",
+    "timestamp": "2026-05-10T09:22:37.584016",
+    "raw_voltage": 3047.7,
+    "raw_current": 18858.3,
+    "raw_temperature": 1618.3,
+    "raw_vibration": 348.6,
+    "raw_rpm": 29.98,
+    "id": "eebe66a4-4f52-4ca1-923f-d03b72d12d58"
+  },
+  {
+    "equipment_id": "7abf18fc-6962-4612-adb6-2c6a1b3c09ef",
+    "timestamp": "2026-05-10T09:52:37.584016",
+    "raw_voltage": 3093.7,
+    "raw_current": 19208.5,
+    "raw_temperature": 1793.0,
+    "raw_vibration": 423.1,
+    "raw_rpm": 29.59,
+    "id": "bfaecee6-f170-42ef-9791-f1a6604d6078"
+  },
+  {
+    "equipment_id": "7abf18fc-6962-4612-adb6-2c6a1b3c09ef",
+    "timestamp": "2026-05-10T10:22:37.584016",
+    "raw_voltage": 2961.2,
+    "raw_current": 19956.0,
+    "raw_temperature": 1876.1,
+    "raw_vibration": 424.4,
+    "raw_rpm": 29.33,
+    "id": "9c861f77-3c1d-458e-9e70-e5a9920ef721"
+  },
+  {
+    "equipment_id": "7abf18fc-6962-4612-adb6-2c6a1b3c09ef",
+    "timestamp": "2026-05-10T10:52:37.584016",
+    "raw_voltage": 3252.4,
+    "raw_current": 21050.5,
+    "raw_temperature": 1964.2,
+    "raw_vibration": 409.5,
+    "raw_rpm": 29.66,
+    "id": "40ab1cd2-d792-4cb8-902d-be3809d7ea0b"
+  },
+  {
+    "equipment_id": "7abf18fc-6962-4612-adb6-2c6a1b3c09ef",
+    "timestamp": "2026-05-10T11:22:37.584016",
+    "raw_voltage": 3030.2,
+    "raw_current": 19021.0,
+    "raw_temperature": 1609.5,
+    "raw_vibration": 425.4,
+    "raw_rpm": 29.56,
+    "id": "539e0cd9-39f5-4828-bdda-4ba260857c2f"
+  },
+  {
+    "equipment_id": "7abf18fc-6962-4612-adb6-2c6a1b3c09ef",
+    "timestamp": "2026-05-10T11:52:37.584016",
+    "raw_voltage": 3213.4,
+    "raw_current": 19887.6,
+    "raw_temperature": 1905.9,
+    "raw_vibration": 431.7,
+    "raw_rpm": 29.37,
+    "id": "a682bc85-52e7-4abc-9742-a3790c3b4f65"
+  },
+  {
+    "equipment_id": "7abf18fc-6962-4612-adb6-2c6a1b3c09ef",
+    "timestamp": "2026-05-10T12:22:37.584016",
+    "raw_voltage": 3241.8,
+    "raw_current": 18429.5,
+    "raw_temperature": 1768.1,
+    "raw_vibration": 350.8,
+    "raw_rpm": 29.27,
+    "id": "0c0382be-2798-4a5d-88c4-42ab4e2098e2"
+  },
+  {
+    "equipment_id": "7abf18fc-6962-4612-adb6-2c6a1b3c09ef",
+    "timestamp": "2026-05-10T12:52:37.584016",
+    "raw_voltage": 3008.1,
+    "raw_current": 21136.6,
+    "raw_temperature": 1873.0,
+    "raw_vibration": 410.0,
+    "raw_rpm": 30.42,
+    "id": "4895ef55-d2be-4614-953a-0d4b402cbc73"
+  },
+  {
+    "equipment_id": "7abf18fc-6962-4612-adb6-2c6a1b3c09ef",
+    "timestamp": "2026-05-10T13:22:37.584016",
+    "raw_voltage": 3218.1,
+    "raw_current": 18881.3,
+    "raw_temperature": 1604.1,
+    "raw_vibration": 480.6,
+    "raw_rpm": 29.82,
+    "id": "8fc7c17b-595e-4330-919b-9f9272b28381"
+  },
+  {
+    "equipment_id": "7abf18fc-6962-4612-adb6-2c6a1b3c09ef",
+    "timestamp": "2026-05-10T13:52:37.584016",
+    "raw_voltage": 3213.5,
+    "raw_current": 20401.7,
+    "raw_temperature": 2004.3,
+    "raw_vibration": 359.8,
+    "raw_rpm": 30.06,
+    "id": "c33976ed-eff4-4139-826a-645eace4a28f"
+  },
+  {
+    "equipment_id": "7abf18fc-6962-4612-adb6-2c6a1b3c09ef",
+    "timestamp": "2026-05-10T14:22:37.584016",
+    "raw_voltage": 2969.2,
+    "raw_current": 19795.9,
+    "raw_temperature": 1691.6,
+    "raw_vibration": 468.8,
+    "raw_rpm": 30.27,
+    "id": "a0de8730-04f9-465f-8693-305ae49f5c16"
+  },
+  {
+    "equipment_id": "7abf18fc-6962-4612-adb6-2c6a1b3c09ef",
+    "timestamp": "2026-05-10T14:52:37.584016",
+    "raw_voltage": 3030.0,
+    "raw_current": 19338.0,
+    "raw_temperature": 1779.2,
+    "raw_vibration": 328.4,
+    "raw_rpm": 29.63,
+    "id": "9b557a2d-dd2a-403c-aca8-321da4d54b4a"
+  },
+  {
+    "equipment_id": "7abf18fc-6962-4612-adb6-2c6a1b3c09ef",
+    "timestamp": "2026-05-10T15:22:37.584016",
+    "raw_voltage": 2968.1,
+    "raw_current": 20849.3,
+    "raw_temperature": 1818.2,
+    "raw_vibration": 330.0,
+    "raw_rpm": 29.73,
+    "id": "15ab15e4-5e04-4d85-9560-f59aa78dcae5"
+  },
+  {
+    "equipment_id": "7abf18fc-6962-4612-adb6-2c6a1b3c09ef",
+    "timestamp": "2026-05-10T15:52:37.584016",
+    "raw_voltage": 3266.0,
+    "raw_current": 18209.5,
+    "raw_temperature": 1863.3,
+    "raw_vibration": 446.5,
+    "raw_rpm": 30.16,
+    "id": "b01fad7a-d311-4d4f-94a5-232be127612b"
+  },
+  {
+    "equipment_id": "7abf18fc-6962-4612-adb6-2c6a1b3c09ef",
+    "timestamp": "2026-05-10T16:22:37.584016",
+    "raw_voltage": 3183.4,
+    "raw_current": 20131.5,
+    "raw_temperature": 1811.1,
+    "raw_vibration": 391.6,
+    "raw_rpm": 29.93,
+    "id": "987f5502-64e3-4b07-8f2c-064041506c37"
+  },
+  {
+    "equipment_id": "7abf18fc-6962-4612-adb6-2c6a1b3c09ef",
+    "timestamp": "2026-05-10T16:52:37.584016",
+    "raw_voltage": 3247.0,
+    "raw_current": 19047.6,
+    "raw_temperature": 1793.9,
+    "raw_vibration": 358.6,
+    "raw_rpm": 30.34,
+    "id": "b15174c4-4e90-4b99-9ac3-9115c1300a4e"
+  },
+  {
+    "equipment_id": "7abf18fc-6962-4612-adb6-2c6a1b3c09ef",
+    "timestamp": "2026-05-10T17:22:37.584016",
+    "raw_voltage": 3044.1,
+    "raw_current": 20064.5,
+    "raw_temperature": 1796.6,
+    "raw_vibration": 426.0,
+    "raw_rpm": 29.44,
+    "id": "1e13a25f-3b9b-416c-96fc-6b35696d0e09"
+  },
+  {
+    "equipment_id": "7abf18fc-6962-4612-adb6-2c6a1b3c09ef",
+    "timestamp": "2026-05-10T17:52:37.584016",
+    "raw_voltage": 3160.8,
+    "raw_current": 20565.7,
+    "raw_temperature": 1750.9,
+    "raw_vibration": 473.1,
+    "raw_rpm": 28.82,
+    "id": "16ec5362-fac5-43d1-b21f-f67fe343214a"
+  },
+  {
+    "equipment_id": "7abf18fc-6962-4612-adb6-2c6a1b3c09ef",
+    "timestamp": "2026-05-10T18:22:37.584016",
+    "raw_voltage": 3054.4,
+    "raw_current": 18566.0,
+    "raw_temperature": 1762.2,
+    "raw_vibration": 473.8,
+    "raw_rpm": 29.26,
+    "id": "18d0a2d9-f522-4e8b-9ec7-610fa98ad1f5"
+  },
+  {
+    "equipment_id": "1fed6776-620c-402f-917a-d2a80c5dffe3",
+    "timestamp": "2026-05-09T18:52:37.925844",
+    "raw_voltage": 3530.0,
+    "raw_current": 33090.2,
+    "raw_temperature": 2006.5,
+    "raw_vibration": 426.7,
+    "raw_rpm": 24.44,
+    "id": "12d7bbd8-133a-4514-91de-703931d7d5ed"
+  },
+  {
+    "equipment_id": "1fed6776-620c-402f-917a-d2a80c5dffe3",
+    "timestamp": "2026-05-09T19:22:37.925844",
+    "raw_voltage": 3712.1,
+    "raw_current": 29901.0,
+    "raw_temperature": 1668.1,
+    "raw_vibration": 476.5,
+    "raw_rpm": 24.26,
+    "id": "e695a8aa-d51f-4eab-befb-86a844d95990"
+  },
+  {
+    "equipment_id": "1fed6776-620c-402f-917a-d2a80c5dffe3",
+    "timestamp": "2026-05-09T19:52:37.925844",
+    "raw_voltage": 3434.1,
+    "raw_current": 34008.7,
+    "raw_temperature": 1638.3,
+    "raw_vibration": 460.6,
+    "raw_rpm": 24.61,
+    "id": "e657b22f-8aee-4e29-84d4-b1d7af453147"
+  },
+  {
+    "equipment_id": "1fed6776-620c-402f-917a-d2a80c5dffe3",
+    "timestamp": "2026-05-09T20:22:37.925844",
+    "raw_voltage": 3516.8,
+    "raw_current": 29515.4,
+    "raw_temperature": 1936.7,
+    "raw_vibration": 350.0,
+    "raw_rpm": 24.26,
+    "id": "d3b346a1-61e2-4141-97ca-df4fccfb5c4a"
+  },
+  {
+    "equipment_id": "1fed6776-620c-402f-917a-d2a80c5dffe3",
+    "timestamp": "2026-05-09T20:52:37.925844",
+    "raw_voltage": 3778.4,
+    "raw_current": 30678.5,
+    "raw_temperature": 1960.0,
+    "raw_vibration": 371.2,
+    "raw_rpm": 24.87,
+    "id": "277688a9-830e-421b-8e84-c65ea99f517b"
+  },
+  {
+    "equipment_id": "1fed6776-620c-402f-917a-d2a80c5dffe3",
+    "timestamp": "2026-05-09T21:22:37.925844",
+    "raw_voltage": 3727.2,
+    "raw_current": 31078.4,
+    "raw_temperature": 1768.0,
+    "raw_vibration": 465.5,
+    "raw_rpm": 24.58,
+    "id": "fc08bc8f-76c1-4bf1-a22f-08608f4eab93"
+  },
+  {
+    "equipment_id": "1fed6776-620c-402f-917a-d2a80c5dffe3",
+    "timestamp": "2026-05-09T21:52:37.925844",
+    "raw_voltage": 3764.9,
+    "raw_current": 34176.7,
+    "raw_temperature": 1832.2,
+    "raw_vibration": 331.7,
+    "raw_rpm": 24.03,
+    "id": "4173d4cf-0f37-47cb-b34f-33c3bba87b37"
+  },
+  {
+    "equipment_id": "1fed6776-620c-402f-917a-d2a80c5dffe3",
+    "timestamp": "2026-05-09T22:22:37.925844",
+    "raw_voltage": 3667.2,
+    "raw_current": 29588.4,
+    "raw_temperature": 1904.4,
+    "raw_vibration": 419.4,
+    "raw_rpm": 24.53,
+    "id": "8c7d717c-d56a-4681-a575-6f99d84f6a68"
+  },
+  {
+    "equipment_id": "1fed6776-620c-402f-917a-d2a80c5dffe3",
+    "timestamp": "2026-05-09T22:52:37.925844",
+    "raw_voltage": 3679.9,
+    "raw_current": 30119.1,
+    "raw_temperature": 1866.2,
+    "raw_vibration": 472.8,
+    "raw_rpm": 25.27,
+    "id": "4e29e995-a74f-4a88-a165-f611a7395781"
+  },
+  {
+    "equipment_id": "1fed6776-620c-402f-917a-d2a80c5dffe3",
+    "timestamp": "2026-05-09T23:22:37.925844",
+    "raw_voltage": 3706.3,
+    "raw_current": 33019.8,
+    "raw_temperature": 1949.5,
+    "raw_vibration": 336.2,
+    "raw_rpm": 24.55,
+    "id": "3664baea-e4e6-41dc-97e3-3b0a2bbb3438"
+  },
+  {
+    "equipment_id": "1fed6776-620c-402f-917a-d2a80c5dffe3",
+    "timestamp": "2026-05-09T23:52:37.925844",
+    "raw_voltage": 3475.2,
+    "raw_current": 32185.7,
+    "raw_temperature": 1597.9,
+    "raw_vibration": 372.4,
+    "raw_rpm": 24.78,
+    "id": "69968f35-cbed-4146-bcdd-11ac42dc2734"
+  },
+  {
+    "equipment_id": "1fed6776-620c-402f-917a-d2a80c5dffe3",
+    "timestamp": "2026-05-10T00:22:37.925844",
+    "raw_voltage": 3712.3,
+    "raw_current": 29252.9,
+    "raw_temperature": 1755.4,
+    "raw_vibration": 336.4,
+    "raw_rpm": 24.95,
+    "id": "f713c051-e5dd-4604-a13c-97561542c21c"
+  },
+  {
+    "equipment_id": "1fed6776-620c-402f-917a-d2a80c5dffe3",
+    "timestamp": "2026-05-10T00:52:37.925844",
+    "raw_voltage": 3758.5,
+    "raw_current": 32672.2,
+    "raw_temperature": 1776.8,
+    "raw_vibration": 439.5,
+    "raw_rpm": 24.01,
+    "id": "7e1c510c-525b-42b4-b167-a5ad13292566"
+  },
+  {
+    "equipment_id": "1fed6776-620c-402f-917a-d2a80c5dffe3",
+    "timestamp": "2026-05-10T01:22:37.925844",
+    "raw_voltage": 3503.1,
+    "raw_current": 31326.2,
+    "raw_temperature": 1596.4,
+    "raw_vibration": 336.4,
+    "raw_rpm": 24.45,
+    "id": "bac8f85f-f597-4106-ac94-3faa35acc3ed"
+  },
+  {
+    "equipment_id": "1fed6776-620c-402f-917a-d2a80c5dffe3",
+    "timestamp": "2026-05-10T01:52:37.925844",
+    "raw_voltage": 3529.0,
+    "raw_current": 29818.1,
+    "raw_temperature": 1659.7,
+    "raw_vibration": 375.7,
+    "raw_rpm": 24.24,
+    "id": "3416ab43-d4f1-4c0e-b9ca-80cc4e02be74"
+  },
+  {
+    "equipment_id": "1fed6776-620c-402f-917a-d2a80c5dffe3",
+    "timestamp": "2026-05-10T02:22:37.925844",
+    "raw_voltage": 3467.2,
+    "raw_current": 29400.3,
+    "raw_temperature": 1769.7,
+    "raw_vibration": 489.3,
+    "raw_rpm": 24.42,
+    "id": "342e5093-c478-4596-aea4-67773a8f3eda"
+  },
+  {
+    "equipment_id": "1fed6776-620c-402f-917a-d2a80c5dffe3",
+    "timestamp": "2026-05-10T02:52:37.925844",
+    "raw_voltage": 3631.2,
+    "raw_current": 31009.5,
+    "raw_temperature": 1645.3,
+    "raw_vibration": 371.1,
+    "raw_rpm": 24.19,
+    "id": "8ef5f92c-f6e7-45de-a80b-1baf35831712"
+  },
+  {
+    "equipment_id": "1fed6776-620c-402f-917a-d2a80c5dffe3",
+    "timestamp": "2026-05-10T03:22:37.925844",
+    "raw_voltage": 3552.4,
+    "raw_current": 30531.5,
+    "raw_temperature": 1628.9,
+    "raw_vibration": 340.5,
+    "raw_rpm": 25.3,
+    "id": "947cbcc1-f703-455a-9e38-14f304ca7568"
+  },
+  {
+    "equipment_id": "1fed6776-620c-402f-917a-d2a80c5dffe3",
+    "timestamp": "2026-05-10T03:52:37.925844",
+    "raw_voltage": 3476.3,
+    "raw_current": 31015.6,
+    "raw_temperature": 1844.4,
+    "raw_vibration": 468.4,
+    "raw_rpm": 25.18,
+    "id": "daa205df-d487-4a67-a4d8-fc5de5c3d1e4"
+  },
+  {
+    "equipment_id": "1fed6776-620c-402f-917a-d2a80c5dffe3",
+    "timestamp": "2026-05-10T04:22:37.925844",
+    "raw_voltage": 3561.3,
+    "raw_current": 33155.2,
+    "raw_temperature": 1879.8,
+    "raw_vibration": 418.7,
+    "raw_rpm": 24.91,
+    "id": "82280ccb-18dc-429e-968a-cee09237e1a6"
+  },
+  {
+    "equipment_id": "1fed6776-620c-402f-917a-d2a80c5dffe3",
+    "timestamp": "2026-05-10T04:52:37.925844",
+    "raw_voltage": 3979.5,
+    "raw_current": 31792.1,
+    "raw_temperature": 1714.3,
+    "raw_vibration": 439.6,
+    "raw_rpm": 25.23,
+    "id": "6f358234-d9d7-4bba-aa0d-f5ab44558b48"
+  },
+  {
+    "equipment_id": "1fed6776-620c-402f-917a-d2a80c5dffe3",
+    "timestamp": "2026-05-10T05:22:37.925844",
+    "raw_voltage": 3542.8,
+    "raw_current": 33021.5,
+    "raw_temperature": 1608.4,
+    "raw_vibration": 371.3,
+    "raw_rpm": 24.74,
+    "id": "111e6431-b6cf-4620-8154-b0f22db5ccd6"
+  },
+  {
+    "equipment_id": "1fed6776-620c-402f-917a-d2a80c5dffe3",
+    "timestamp": "2026-05-10T05:52:37.925844",
+    "raw_voltage": 3461.0,
+    "raw_current": 29187.9,
+    "raw_temperature": 1655.8,
+    "raw_vibration": 336.1,
+    "raw_rpm": 25.21,
+    "id": "a35db6d6-9c29-4e2d-9e4a-608e8b3283be"
+  },
+  {
+    "equipment_id": "1fed6776-620c-402f-917a-d2a80c5dffe3",
+    "timestamp": "2026-05-10T06:22:37.925844",
+    "raw_voltage": 3638.5,
+    "raw_current": 30164.4,
+    "raw_temperature": 1861.7,
+    "raw_vibration": 445.9,
+    "raw_rpm": 24.06,
+    "id": "05524695-3bf1-4a02-9e17-02fa0c74ffa2"
+  },
+  {
+    "equipment_id": "1fed6776-620c-402f-917a-d2a80c5dffe3",
+    "timestamp": "2026-05-10T06:52:37.925844",
+    "raw_voltage": 3545.0,
+    "raw_current": 32677.5,
+    "raw_temperature": 1809.1,
+    "raw_vibration": 359.5,
+    "raw_rpm": 24.69,
+    "id": "e16f3401-e3f0-4f05-aacb-65d4d49f5bbc"
+  },
+  {
+    "equipment_id": "1fed6776-620c-402f-917a-d2a80c5dffe3",
+    "timestamp": "2026-05-10T07:22:37.925844",
+    "raw_voltage": 3587.4,
+    "raw_current": 33188.8,
+    "raw_temperature": 1745.0,
+    "raw_vibration": 484.6,
+    "raw_rpm": 25.26,
+    "id": "f332871e-3a5c-4d32-ad14-718336857cb0"
+  },
+  {
+    "equipment_id": "1fed6776-620c-402f-917a-d2a80c5dffe3",
+    "timestamp": "2026-05-10T07:52:37.925844",
+    "raw_voltage": 3543.1,
+    "raw_current": 33025.9,
+    "raw_temperature": 1869.1,
+    "raw_vibration": 383.4,
+    "raw_rpm": 24.95,
+    "id": "339e3905-dba4-4350-9106-ff379ed37249"
+  },
+  {
+    "equipment_id": "1fed6776-620c-402f-917a-d2a80c5dffe3",
+    "timestamp": "2026-05-10T08:22:37.925844",
+    "raw_voltage": 3640.7,
+    "raw_current": 31145.1,
+    "raw_temperature": 1985.0,
+    "raw_vibration": 373.8,
+    "raw_rpm": 24.43,
+    "id": "7ea918d8-4c61-4c56-bd02-d0ed652f684d"
+  },
+  {
+    "equipment_id": "1fed6776-620c-402f-917a-d2a80c5dffe3",
+    "timestamp": "2026-05-10T08:52:37.925844",
+    "raw_voltage": 3740.6,
+    "raw_current": 31355.6,
+    "raw_temperature": 1899.7,
+    "raw_vibration": 446.4,
+    "raw_rpm": 25.11,
+    "id": "5b2dba76-2787-4c0c-ac39-96f57730e084"
+  },
+  {
+    "equipment_id": "1fed6776-620c-402f-917a-d2a80c5dffe3",
+    "timestamp": "2026-05-10T09:22:37.925844",
+    "raw_voltage": 3658.3,
+    "raw_current": 29849.6,
+    "raw_temperature": 1590.6,
+    "raw_vibration": 402.4,
+    "raw_rpm": 24.6,
+    "id": "a02698ad-4bf9-4317-922c-c350ae900b0f"
+  },
+  {
+    "equipment_id": "1fed6776-620c-402f-917a-d2a80c5dffe3",
+    "timestamp": "2026-05-10T09:52:37.925844",
+    "raw_voltage": 3494.0,
+    "raw_current": 33733.1,
+    "raw_temperature": 1598.1,
+    "raw_vibration": 470.1,
+    "raw_rpm": 24.2,
+    "id": "06cecbe0-2c1c-4741-8ccf-e84c4470753b"
+  },
+  {
+    "equipment_id": "1fed6776-620c-402f-917a-d2a80c5dffe3",
+    "timestamp": "2026-05-10T10:22:37.925844",
+    "raw_voltage": 3713.1,
+    "raw_current": 30551.2,
+    "raw_temperature": 1949.7,
+    "raw_vibration": 416.9,
+    "raw_rpm": 24.15,
+    "id": "fcbc800c-4382-4561-a458-358428075991"
+  },
+  {
+    "equipment_id": "1fed6776-620c-402f-917a-d2a80c5dffe3",
+    "timestamp": "2026-05-10T10:52:37.925844",
+    "raw_voltage": 3692.1,
+    "raw_current": 33016.7,
+    "raw_temperature": 1797.4,
+    "raw_vibration": 355.2,
+    "raw_rpm": 24.37,
+    "id": "c3f638ea-7bc3-4254-a201-f8ae46e250a1"
+  },
+  {
+    "equipment_id": "1fed6776-620c-402f-917a-d2a80c5dffe3",
+    "timestamp": "2026-05-10T11:22:37.925844",
+    "raw_voltage": 3508.2,
+    "raw_current": 32092.0,
+    "raw_temperature": 1638.8,
+    "raw_vibration": 440.7,
+    "raw_rpm": 24.37,
+    "id": "c39f3f7b-f09f-4ab8-9c57-da2f9b46196e"
+  },
+  {
+    "equipment_id": "1fed6776-620c-402f-917a-d2a80c5dffe3",
+    "timestamp": "2026-05-10T11:52:37.925844",
+    "raw_voltage": 3712.3,
+    "raw_current": 33332.0,
+    "raw_temperature": 1874.7,
+    "raw_vibration": 335.4,
+    "raw_rpm": 24.44,
+    "id": "7d6168dd-8d09-40ec-950e-b3b721f0991a"
+  },
+  {
+    "equipment_id": "1fed6776-620c-402f-917a-d2a80c5dffe3",
+    "timestamp": "2026-05-10T12:22:37.925844",
+    "raw_voltage": 3476.5,
+    "raw_current": 32857.8,
+    "raw_temperature": 1617.8,
+    "raw_vibration": 488.5,
+    "raw_rpm": 24.24,
+    "id": "83081fb4-d17b-47ab-bd5e-446021589b12"
+  },
+  {
+    "equipment_id": "1fed6776-620c-402f-917a-d2a80c5dffe3",
+    "timestamp": "2026-05-10T12:52:37.925844",
+    "raw_voltage": 3570.4,
+    "raw_current": 33123.5,
+    "raw_temperature": 1912.3,
+    "raw_vibration": 389.1,
+    "raw_rpm": 24.38,
+    "id": "09e1b263-2e62-41ba-8126-5bfa412e0efe"
+  },
+  {
+    "equipment_id": "1fed6776-620c-402f-917a-d2a80c5dffe3",
+    "timestamp": "2026-05-10T13:22:37.925844",
+    "raw_voltage": 3593.8,
+    "raw_current": 32871.0,
+    "raw_temperature": 2001.7,
+    "raw_vibration": 422.6,
+    "raw_rpm": 25.02,
+    "id": "728068e0-44c8-4254-a06b-532a0229fbbd"
+  },
+  {
+    "equipment_id": "1fed6776-620c-402f-917a-d2a80c5dffe3",
+    "timestamp": "2026-05-10T13:52:37.925844",
+    "raw_voltage": 3684.9,
+    "raw_current": 29303.7,
+    "raw_temperature": 1949.3,
+    "raw_vibration": 329.2,
+    "raw_rpm": 24.4,
+    "id": "e8f0916f-f7e4-408e-a259-9055bb752647"
+  },
+  {
+    "equipment_id": "1fed6776-620c-402f-917a-d2a80c5dffe3",
+    "timestamp": "2026-05-10T14:22:37.925844",
+    "raw_voltage": 3436.3,
+    "raw_current": 30469.8,
+    "raw_temperature": 1602.8,
+    "raw_vibration": 409.8,
+    "raw_rpm": 24.8,
+    "id": "aa168b58-07f1-4ec7-b359-9ebf0c214101"
+  },
+  {
+    "equipment_id": "1fed6776-620c-402f-917a-d2a80c5dffe3",
+    "timestamp": "2026-05-10T14:52:37.925844",
+    "raw_voltage": 3732.5,
+    "raw_current": 32700.3,
+    "raw_temperature": 1886.7,
+    "raw_vibration": 369.4,
+    "raw_rpm": 24.71,
+    "id": "ded26555-553c-47c3-950f-5355587bb57c"
+  },
+  {
+    "equipment_id": "1fed6776-620c-402f-917a-d2a80c5dffe3",
+    "timestamp": "2026-05-10T15:22:37.925844",
+    "raw_voltage": 4080.1,
+    "raw_current": 29151.6,
+    "raw_temperature": 1916.1,
+    "raw_vibration": 480.0,
+    "raw_rpm": 24.38,
+    "id": "8011d2a1-a07d-4352-afc8-083adbf70a99"
+  },
+  {
+    "equipment_id": "1fed6776-620c-402f-917a-d2a80c5dffe3",
+    "timestamp": "2026-05-10T15:52:37.925844",
+    "raw_voltage": 4236.1,
+    "raw_current": 33578.3,
+    "raw_temperature": 1990.1,
+    "raw_vibration": 352.8,
+    "raw_rpm": 24.19,
+    "id": "05aac42f-7c15-4a06-b7bb-6ada16d9a84d"
+  },
+  {
+    "equipment_id": "1fed6776-620c-402f-917a-d2a80c5dffe3",
+    "timestamp": "2026-05-10T16:22:37.925844",
+    "raw_voltage": 3750.7,
+    "raw_current": 30315.7,
+    "raw_temperature": 1897.8,
+    "raw_vibration": 371.0,
+    "raw_rpm": 24.22,
+    "id": "afd678cf-38d2-4955-aa70-cbf828e6883e"
+  },
+  {
+    "equipment_id": "1fed6776-620c-402f-917a-d2a80c5dffe3",
+    "timestamp": "2026-05-10T16:52:37.925844",
+    "raw_voltage": 3682.7,
+    "raw_current": 31775.8,
+    "raw_temperature": 1842.1,
+    "raw_vibration": 477.9,
+    "raw_rpm": 25.13,
+    "id": "704593f1-78d1-4056-a920-f2819d83a3bd"
+  },
+  {
+    "equipment_id": "1fed6776-620c-402f-917a-d2a80c5dffe3",
+    "timestamp": "2026-05-10T17:22:37.925844",
+    "raw_voltage": 3764.5,
+    "raw_current": 29486.7,
+    "raw_temperature": 1707.8,
+    "raw_vibration": 471.9,
+    "raw_rpm": 23.96,
+    "id": "d9d6acf2-17b5-42ab-8a0a-1db47d8e08ad"
+  },
+  {
+    "equipment_id": "1fed6776-620c-402f-917a-d2a80c5dffe3",
+    "timestamp": "2026-05-10T17:52:37.925844",
+    "raw_voltage": 4350.2,
+    "raw_current": 29919.5,
+    "raw_temperature": 1638.1,
+    "raw_vibration": 417.6,
+    "raw_rpm": 25.2,
+    "id": "2796e78a-4d1a-4131-a706-353252184e22"
+  },
+  {
+    "equipment_id": "1fed6776-620c-402f-917a-d2a80c5dffe3",
+    "timestamp": "2026-05-10T18:22:37.925844",
+    "raw_voltage": 3450.0,
+    "raw_current": 31071.0,
+    "raw_temperature": 1842.5,
+    "raw_vibration": 416.2,
+    "raw_rpm": 25.06,
+    "id": "497cc5d8-69be-4d0c-87ca-d6fd03b532f3"
+  },
+  {
+    "equipment_id": "902ac75d-9ea9-4ace-8007-bc6b2877bf4f",
+    "timestamp": "2026-05-09T18:52:38.295388",
+    "raw_voltage": 1889.8,
+    "raw_current": 7542.9,
+    "raw_temperature": 1875.2,
+    "raw_vibration": 470.3,
+    "raw_rpm": 28.54,
+    "id": "68e8dbb8-fdb2-4685-8a33-791cf99bad73"
+  },
+  {
+    "equipment_id": "902ac75d-9ea9-4ace-8007-bc6b2877bf4f",
+    "timestamp": "2026-05-09T19:22:38.295388",
+    "raw_voltage": 2051.0,
+    "raw_current": 8589.5,
+    "raw_temperature": 1973.2,
+    "raw_vibration": 458.6,
+    "raw_rpm": 28.47,
+    "id": "69c6ef08-4204-499f-ba28-35315e3b48b6"
+  },
+  {
+    "equipment_id": "902ac75d-9ea9-4ace-8007-bc6b2877bf4f",
+    "timestamp": "2026-05-09T19:52:38.295388",
+    "raw_voltage": 1828.8,
+    "raw_current": 8290.4,
+    "raw_temperature": 1673.5,
+    "raw_vibration": 410.7,
+    "raw_rpm": 29.48,
+    "id": "cf927909-2a70-4569-8013-777fa51c4f22"
+  },
+  {
+    "equipment_id": "902ac75d-9ea9-4ace-8007-bc6b2877bf4f",
+    "timestamp": "2026-05-09T20:22:38.295388",
+    "raw_voltage": 1775.0,
+    "raw_current": 8146.2,
+    "raw_temperature": 1717.9,
+    "raw_vibration": 337.2,
+    "raw_rpm": 28.49,
+    "id": "013b49fd-64eb-42b8-a8db-90df16556db1"
+  },
+  {
+    "equipment_id": "902ac75d-9ea9-4ace-8007-bc6b2877bf4f",
+    "timestamp": "2026-05-09T20:52:38.295388",
+    "raw_voltage": 1783.6,
+    "raw_current": 8053.8,
+    "raw_temperature": 1795.4,
+    "raw_vibration": 416.9,
+    "raw_rpm": 30.12,
+    "id": "83f5eba7-4740-4e9c-8b6d-f6e354e23e60"
+  },
+  {
+    "equipment_id": "902ac75d-9ea9-4ace-8007-bc6b2877bf4f",
+    "timestamp": "2026-05-09T21:22:38.295388",
+    "raw_voltage": 1812.1,
+    "raw_current": 8221.5,
+    "raw_temperature": 1939.9,
+    "raw_vibration": 469.2,
+    "raw_rpm": 29.03,
+    "id": "14916739-781c-4dd8-be41-4351e06b01b5"
+  },
+  {
+    "equipment_id": "902ac75d-9ea9-4ace-8007-bc6b2877bf4f",
+    "timestamp": "2026-05-09T21:52:38.295388",
+    "raw_voltage": 1804.6,
+    "raw_current": 7817.5,
+    "raw_temperature": 1806.8,
+    "raw_vibration": 375.5,
+    "raw_rpm": 29.14,
+    "id": "1110232f-9efa-4ec4-a096-b3a1249a6a91"
+  },
+  {
+    "equipment_id": "902ac75d-9ea9-4ace-8007-bc6b2877bf4f",
+    "timestamp": "2026-05-09T22:22:38.295388",
+    "raw_voltage": 1832.2,
+    "raw_current": 8651.2,
+    "raw_temperature": 1805.4,
+    "raw_vibration": 471.7,
+    "raw_rpm": 29.54,
+    "id": "b0515abb-29cb-4033-9fa8-8a1cc9636e82"
+  },
+  {
+    "equipment_id": "902ac75d-9ea9-4ace-8007-bc6b2877bf4f",
+    "timestamp": "2026-05-09T22:52:38.295388",
+    "raw_voltage": 1799.2,
+    "raw_current": 7701.0,
+    "raw_temperature": 1735.9,
+    "raw_vibration": 400.1,
+    "raw_rpm": 29.65,
+    "id": "c5489327-90ae-439d-8b6b-5acdcc81568d"
+  },
+  {
+    "equipment_id": "902ac75d-9ea9-4ace-8007-bc6b2877bf4f",
+    "timestamp": "2026-05-09T23:22:38.295388",
+    "raw_voltage": 1865.9,
+    "raw_current": 8391.4,
+    "raw_temperature": 1883.1,
+    "raw_vibration": 344.0,
+    "raw_rpm": 29.47,
+    "id": "521deea9-841b-4f81-b888-d5fadb6a4324"
+  },
+  {
+    "equipment_id": "902ac75d-9ea9-4ace-8007-bc6b2877bf4f",
+    "timestamp": "2026-05-09T23:52:38.295388",
+    "raw_voltage": 1854.3,
+    "raw_current": 8422.4,
+    "raw_temperature": 1930.3,
+    "raw_vibration": 386.4,
+    "raw_rpm": 29.56,
+    "id": "5dd041d7-584d-48f2-bc91-b571131f29b8"
+  },
+  {
+    "equipment_id": "902ac75d-9ea9-4ace-8007-bc6b2877bf4f",
+    "timestamp": "2026-05-10T00:22:38.295388",
+    "raw_voltage": 1851.7,
+    "raw_current": 8488.1,
+    "raw_temperature": 1598.8,
+    "raw_vibration": 479.6,
+    "raw_rpm": 30.0,
+    "id": "b393b7a5-c254-461b-b0ee-5c5f644417d6"
+  },
+  {
+    "equipment_id": "902ac75d-9ea9-4ace-8007-bc6b2877bf4f",
+    "timestamp": "2026-05-10T00:52:38.295388",
+    "raw_voltage": 1757.3,
+    "raw_current": 8434.4,
+    "raw_temperature": 1628.7,
+    "raw_vibration": 440.1,
+    "raw_rpm": 29.25,
+    "id": "490f1b74-114f-4195-b920-10c8b75b7f4d"
+  },
+  {
+    "equipment_id": "902ac75d-9ea9-4ace-8007-bc6b2877bf4f",
+    "timestamp": "2026-05-10T01:22:38.295388",
+    "raw_voltage": 1822.1,
+    "raw_current": 7987.9,
+    "raw_temperature": 1713.9,
+    "raw_vibration": 335.4,
+    "raw_rpm": 29.48,
+    "id": "d022e1ed-425e-4b85-aa1c-b74c595a6421"
+  },
+  {
+    "equipment_id": "902ac75d-9ea9-4ace-8007-bc6b2877bf4f",
+    "timestamp": "2026-05-10T01:52:38.295388",
+    "raw_voltage": 1836.8,
+    "raw_current": 8384.9,
+    "raw_temperature": 1725.7,
+    "raw_vibration": 337.6,
+    "raw_rpm": 29.19,
+    "id": "07c54ffa-7652-4b78-b0ab-0fa05c67e582"
+  },
+  {
+    "equipment_id": "902ac75d-9ea9-4ace-8007-bc6b2877bf4f",
+    "timestamp": "2026-05-10T02:22:38.295388",
+    "raw_voltage": 1714.0,
+    "raw_current": 8431.9,
+    "raw_temperature": 1673.7,
+    "raw_vibration": 443.9,
+    "raw_rpm": 29.93,
+    "id": "dafbead1-8bff-4560-a29d-b67dee278673"
+  },
+  {
+    "equipment_id": "902ac75d-9ea9-4ace-8007-bc6b2877bf4f",
+    "timestamp": "2026-05-10T02:52:38.295388",
+    "raw_voltage": 1713.1,
+    "raw_current": 7893.1,
+    "raw_temperature": 1638.3,
+    "raw_vibration": 359.1,
+    "raw_rpm": 28.95,
+    "id": "1c330e3a-6a4a-4c86-89b1-ec041db27f3f"
+  },
+  {
+    "equipment_id": "902ac75d-9ea9-4ace-8007-bc6b2877bf4f",
+    "timestamp": "2026-05-10T03:22:38.295388",
+    "raw_voltage": 1886.3,
+    "raw_current": 7897.3,
+    "raw_temperature": 1599.5,
+    "raw_vibration": 480.9,
+    "raw_rpm": 30.2,
+    "id": "66f6814f-cd51-4923-a38f-a664857b9bab"
+  },
+  {
+    "equipment_id": "902ac75d-9ea9-4ace-8007-bc6b2877bf4f",
+    "timestamp": "2026-05-10T03:52:38.295388",
+    "raw_voltage": 1831.7,
+    "raw_current": 7800.1,
+    "raw_temperature": 2011.4,
+    "raw_vibration": 414.0,
+    "raw_rpm": 28.6,
+    "id": "a52fee09-8f9c-4320-9b2c-e20040fd1670"
+  },
+  {
+    "equipment_id": "902ac75d-9ea9-4ace-8007-bc6b2877bf4f",
+    "timestamp": "2026-05-10T04:22:38.295388",
+    "raw_voltage": 1821.9,
+    "raw_current": 8413.2,
+    "raw_temperature": 1616.2,
+    "raw_vibration": 453.8,
+    "raw_rpm": 29.93,
+    "id": "053cfa87-e0e9-4149-9007-6aeffe1ba0de"
+  },
+  {
+    "equipment_id": "902ac75d-9ea9-4ace-8007-bc6b2877bf4f",
+    "timestamp": "2026-05-10T04:52:38.295388",
+    "raw_voltage": 1778.0,
+    "raw_current": 8447.4,
+    "raw_temperature": 1684.9,
+    "raw_vibration": 365.9,
+    "raw_rpm": 29.91,
+    "id": "4146f6d8-6217-4c3b-9be8-39f403d2395e"
+  },
+  {
+    "equipment_id": "902ac75d-9ea9-4ace-8007-bc6b2877bf4f",
+    "timestamp": "2026-05-10T05:22:38.295388",
+    "raw_voltage": 1850.7,
+    "raw_current": 8042.7,
+    "raw_temperature": 1979.7,
+    "raw_vibration": 423.5,
+    "raw_rpm": 29.0,
+    "id": "8a72ee5c-a81a-40c8-8fdb-7e3d283cba3e"
+  },
+  {
+    "equipment_id": "902ac75d-9ea9-4ace-8007-bc6b2877bf4f",
+    "timestamp": "2026-05-10T05:52:38.295388",
+    "raw_voltage": 1785.4,
+    "raw_current": 8403.4,
+    "raw_temperature": 1605.5,
+    "raw_vibration": 429.6,
+    "raw_rpm": 28.47,
+    "id": "9c5efb9f-521f-44b5-8960-21a33c90f8cc"
+  },
+  {
+    "equipment_id": "902ac75d-9ea9-4ace-8007-bc6b2877bf4f",
+    "timestamp": "2026-05-10T06:22:38.295388",
+    "raw_voltage": 1760.4,
+    "raw_current": 7811.2,
+    "raw_temperature": 1590.4,
+    "raw_vibration": 415.6,
+    "raw_rpm": 29.28,
+    "id": "920840b4-7ead-4c03-a3c0-552515bf2176"
+  },
+  {
+    "equipment_id": "902ac75d-9ea9-4ace-8007-bc6b2877bf4f",
+    "timestamp": "2026-05-10T06:52:38.295388",
+    "raw_voltage": 1850.3,
+    "raw_current": 8597.3,
+    "raw_temperature": 1920.3,
+    "raw_vibration": 429.6,
+    "raw_rpm": 28.46,
+    "id": "098d4908-98cf-4e23-a8d7-d21f15750920"
+  },
+  {
+    "equipment_id": "902ac75d-9ea9-4ace-8007-bc6b2877bf4f",
+    "timestamp": "2026-05-10T07:22:38.295388",
+    "raw_voltage": 1880.7,
+    "raw_current": 8065.0,
+    "raw_temperature": 1691.8,
+    "raw_vibration": 329.2,
+    "raw_rpm": 30.1,
+    "id": "dd71ed47-466f-44fd-aade-18f4967c5958"
+  },
+  {
+    "equipment_id": "902ac75d-9ea9-4ace-8007-bc6b2877bf4f",
+    "timestamp": "2026-05-10T07:52:38.295388",
+    "raw_voltage": 1840.9,
+    "raw_current": 8485.0,
+    "raw_temperature": 1884.7,
+    "raw_vibration": 392.0,
+    "raw_rpm": 29.23,
+    "id": "41a05e15-5cf5-4999-9479-f6afdfa0f47c"
+  },
+  {
+    "equipment_id": "902ac75d-9ea9-4ace-8007-bc6b2877bf4f",
+    "timestamp": "2026-05-10T08:22:38.295388",
+    "raw_voltage": 1873.3,
+    "raw_current": 8469.0,
+    "raw_temperature": 1745.2,
+    "raw_vibration": 348.1,
+    "raw_rpm": 30.16,
+    "id": "7e274f54-9d65-44a8-bcc0-71250ec477ea"
+  },
+  {
+    "equipment_id": "902ac75d-9ea9-4ace-8007-bc6b2877bf4f",
+    "timestamp": "2026-05-10T08:52:38.295388",
+    "raw_voltage": 1813.0,
+    "raw_current": 7964.8,
+    "raw_temperature": 1677.7,
+    "raw_vibration": 491.5,
+    "raw_rpm": 29.28,
+    "id": "67693d64-c32b-447f-87cc-f26a9e439fd0"
+  },
+  {
+    "equipment_id": "902ac75d-9ea9-4ace-8007-bc6b2877bf4f",
+    "timestamp": "2026-05-10T09:22:38.295388",
+    "raw_voltage": 1742.3,
+    "raw_current": 8031.5,
+    "raw_temperature": 1790.4,
+    "raw_vibration": 482.9,
+    "raw_rpm": 28.88,
+    "id": "f0c6d8c7-59da-4c90-9674-266d8d9ff8d0"
+  },
+  {
+    "equipment_id": "902ac75d-9ea9-4ace-8007-bc6b2877bf4f",
+    "timestamp": "2026-05-10T09:52:38.295388",
+    "raw_voltage": 1864.7,
+    "raw_current": 8463.3,
+    "raw_temperature": 1972.2,
+    "raw_vibration": 482.1,
+    "raw_rpm": 28.84,
+    "id": "0ccd3d57-5628-4a82-8eb3-4d69135cd09b"
+  },
+  {
+    "equipment_id": "902ac75d-9ea9-4ace-8007-bc6b2877bf4f",
+    "timestamp": "2026-05-10T10:22:38.295388",
+    "raw_voltage": 1763.2,
+    "raw_current": 7916.1,
+    "raw_temperature": 2008.1,
+    "raw_vibration": 485.8,
+    "raw_rpm": 29.07,
+    "id": "e5ad2544-4951-4027-8283-55f06629172b"
+  },
+  {
+    "equipment_id": "902ac75d-9ea9-4ace-8007-bc6b2877bf4f",
+    "timestamp": "2026-05-10T10:52:38.295388",
+    "raw_voltage": 2162.2,
+    "raw_current": 8072.3,
+    "raw_temperature": 2000.4,
+    "raw_vibration": 361.7,
+    "raw_rpm": 28.91,
+    "id": "8cefc72a-ba4d-42f2-86cd-fa2d57125aab"
+  },
+  {
+    "equipment_id": "902ac75d-9ea9-4ace-8007-bc6b2877bf4f",
+    "timestamp": "2026-05-10T11:22:38.295388",
+    "raw_voltage": 1726.8,
+    "raw_current": 8685.0,
+    "raw_temperature": 1750.9,
+    "raw_vibration": 409.9,
+    "raw_rpm": 30.06,
+    "id": "e0cb4d34-3333-4572-b6e5-cadadc39c5ac"
+  },
+  {
+    "equipment_id": "902ac75d-9ea9-4ace-8007-bc6b2877bf4f",
+    "timestamp": "2026-05-10T11:52:38.295388",
+    "raw_voltage": 1751.6,
+    "raw_current": 7531.9,
+    "raw_temperature": 1757.4,
+    "raw_vibration": 481.2,
+    "raw_rpm": 29.89,
+    "id": "f6304075-bd25-4cab-8138-c44d02fc1438"
+  },
+  {
+    "equipment_id": "902ac75d-9ea9-4ace-8007-bc6b2877bf4f",
+    "timestamp": "2026-05-10T12:22:38.295388",
+    "raw_voltage": 1811.4,
+    "raw_current": 7749.4,
+    "raw_temperature": 1746.8,
+    "raw_vibration": 426.4,
+    "raw_rpm": 29.87,
+    "id": "5b773cec-bdae-4f32-8bf1-cea04223766b"
+  },
+  {
+    "equipment_id": "902ac75d-9ea9-4ace-8007-bc6b2877bf4f",
+    "timestamp": "2026-05-10T12:52:38.295388",
+    "raw_voltage": 1881.0,
+    "raw_current": 7547.6,
+    "raw_temperature": 1986.2,
+    "raw_vibration": 453.9,
+    "raw_rpm": 29.8,
+    "id": "dbf4d36e-08f3-4c12-9c53-ce30beb41ca9"
+  },
+  {
+    "equipment_id": "902ac75d-9ea9-4ace-8007-bc6b2877bf4f",
+    "timestamp": "2026-05-10T13:22:38.295388",
+    "raw_voltage": 1836.7,
+    "raw_current": 8086.7,
+    "raw_temperature": 1974.2,
+    "raw_vibration": 390.8,
+    "raw_rpm": 29.19,
+    "id": "5bf02aee-d3f1-49da-95f2-223e5dc86181"
+  },
+  {
+    "equipment_id": "902ac75d-9ea9-4ace-8007-bc6b2877bf4f",
+    "timestamp": "2026-05-10T13:52:38.295388",
+    "raw_voltage": 1858.0,
+    "raw_current": 7518.8,
+    "raw_temperature": 1601.1,
+    "raw_vibration": 382.0,
+    "raw_rpm": 29.13,
+    "id": "b1729169-6998-4398-85e7-aaf2d5374def"
+  },
+  {
+    "equipment_id": "902ac75d-9ea9-4ace-8007-bc6b2877bf4f",
+    "timestamp": "2026-05-10T14:22:38.295388",
+    "raw_voltage": 1759.2,
+    "raw_current": 7960.0,
+    "raw_temperature": 1798.5,
+    "raw_vibration": 331.9,
+    "raw_rpm": 29.83,
+    "id": "7616279e-9ce1-41ad-9eaa-2396ea446a15"
+  },
+  {
+    "equipment_id": "902ac75d-9ea9-4ace-8007-bc6b2877bf4f",
+    "timestamp": "2026-05-10T14:52:38.295388",
+    "raw_voltage": 1783.0,
+    "raw_current": 7446.6,
+    "raw_temperature": 1897.9,
+    "raw_vibration": 350.7,
+    "raw_rpm": 29.39,
+    "id": "40c4bfa8-e911-4964-beff-6b0bfa8e1119"
+  },
+  {
+    "equipment_id": "902ac75d-9ea9-4ace-8007-bc6b2877bf4f",
+    "timestamp": "2026-05-10T15:22:38.295388",
+    "raw_voltage": 1887.5,
+    "raw_current": 7464.7,
+    "raw_temperature": 1616.5,
+    "raw_vibration": 346.8,
+    "raw_rpm": 28.89,
+    "id": "954cb40b-3a53-43b2-be97-7416d1cdcbd5"
+  },
+  {
+    "equipment_id": "902ac75d-9ea9-4ace-8007-bc6b2877bf4f",
+    "timestamp": "2026-05-10T15:52:38.295388",
+    "raw_voltage": 1738.4,
+    "raw_current": 7717.6,
+    "raw_temperature": 1827.3,
+    "raw_vibration": 386.0,
+    "raw_rpm": 28.66,
+    "id": "3ce428fa-9397-4229-9616-824f25c9aa47"
+  },
+  {
+    "equipment_id": "902ac75d-9ea9-4ace-8007-bc6b2877bf4f",
+    "timestamp": "2026-05-10T16:22:38.295388",
+    "raw_voltage": 1784.0,
+    "raw_current": 8057.3,
+    "raw_temperature": 1824.4,
+    "raw_vibration": 339.8,
+    "raw_rpm": 29.39,
+    "id": "e78b434c-db88-4c59-9d59-cee20da328bd"
+  },
+  {
+    "equipment_id": "902ac75d-9ea9-4ace-8007-bc6b2877bf4f",
+    "timestamp": "2026-05-10T16:52:38.295388",
+    "raw_voltage": 1771.9,
+    "raw_current": 7893.2,
+    "raw_temperature": 1820.8,
+    "raw_vibration": 397.0,
+    "raw_rpm": 28.66,
+    "id": "5afa018b-9ebd-4f92-ba0a-4ae7ae1bfc6e"
+  },
+  {
+    "equipment_id": "902ac75d-9ea9-4ace-8007-bc6b2877bf4f",
+    "timestamp": "2026-05-10T17:22:38.295388",
+    "raw_voltage": 2143.6,
+    "raw_current": 7410.5,
+    "raw_temperature": 1927.6,
+    "raw_vibration": 428.0,
+    "raw_rpm": 30.02,
+    "id": "08551f67-2b62-4678-b1e9-fbb0f3ab911f"
+  },
+  {
+    "equipment_id": "902ac75d-9ea9-4ace-8007-bc6b2877bf4f",
+    "timestamp": "2026-05-10T17:52:38.295388",
+    "raw_voltage": 1857.0,
+    "raw_current": 8485.9,
+    "raw_temperature": 1832.7,
+    "raw_vibration": 452.1,
+    "raw_rpm": 28.65,
+    "id": "a96364e8-ae0c-41f4-a60a-a2289347271a"
+  },
+  {
+    "equipment_id": "902ac75d-9ea9-4ace-8007-bc6b2877bf4f",
+    "timestamp": "2026-05-10T18:22:38.295388",
+    "raw_voltage": 1749.9,
+    "raw_current": 8694.6,
+    "raw_temperature": 1808.5,
+    "raw_vibration": 365.3,
+    "raw_rpm": 29.22,
+    "id": "808c96f7-7d43-4711-8c5e-7998be713ffe"
+  }
+]

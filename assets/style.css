@@ -1,0 +1,229 @@
+/* Motor Monitor — Industrial Dark Theme */
+/* Inject via st.markdown with unsafe_allow_html=True */
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Barlow:wght@300;400;500;600;700&family=Barlow+Condensed:wght@600;700&display=swap');
+
+:root {
+    --bg-primary: #0d1117;
+    --bg-secondary: #161b22;
+    --bg-card: #1c2128;
+    --bg-hover: #21262d;
+    --border: #30363d;
+    --border-active: #f97316;
+
+    --text-primary: #e6edf3;
+    --text-secondary: #8b949e;
+    --text-muted: #484f58;
+
+    --accent: #f97316;          /* amber-500 — industrial warning orange */
+    --accent-dim: #7c3512;
+
+    --ok: #22c55e;
+    --ok-bg: #052e16;
+    --warning: #f59e0b;
+    --warning-bg: #2d1f00;
+    --critical: #ef4444;
+    --critical-bg: #2d0e0e;
+    --inactive: #6b7280;
+
+    --font-ui: 'Barlow', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    --font-display: 'Barlow Condensed', sans-serif;
+}
+
+/* Global */
+html, body, [class*="css"] {
+    font-family: var(--font-ui) !important;
+    background-color: var(--bg-primary) !important;
+    color: var(--text-primary) !important;
+}
+
+/* Sidebar */
+[data-testid="stSidebar"] {
+    background-color: var(--bg-secondary) !important;
+    border-right: 1px solid var(--border) !important;
+}
+
+[data-testid="stSidebar"] * {
+    color: var(--text-primary) !important;
+}
+
+/* Metric cards */
+[data-testid="stMetric"] {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 16px;
+}
+
+/* Dataframe */
+[data-testid="stDataFrame"] {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+
+/* Buttons */
+.stButton > button {
+    font-family: var(--font-ui) !important;
+    font-weight: 600 !important;
+    border-radius: 6px !important;
+    border: 1px solid var(--border) !important;
+    background: var(--bg-card) !important;
+    color: var(--text-primary) !important;
+    transition: all 0.15s ease !important;
+}
+
+.stButton > button:hover {
+    border-color: var(--accent) !important;
+    color: var(--accent) !important;
+}
+
+/* Primary button */
+.stButton > button[kind="primary"] {
+    background: var(--accent) !important;
+    border-color: var(--accent) !important;
+    color: #000 !important;
+}
+
+/* Inputs */
+.stTextInput > div > div > input,
+.stNumberInput > div > div > input,
+.stSelectbox > div > div,
+.stTextArea > div > div > textarea {
+    background: var(--bg-card) !important;
+    border: 1px solid var(--border) !important;
+    color: var(--text-primary) !important;
+    border-radius: 6px !important;
+    font-family: var(--font-ui) !important;
+}
+
+/* Status badges */
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 3px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: var(--font-ui);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.badge-ok      { background: var(--ok-bg);       color: var(--ok);       border: 1px solid var(--ok); }
+.badge-warning { background: var(--warning-bg);   color: var(--warning);  border: 1px solid var(--warning); }
+.badge-critical{ background: var(--critical-bg);  color: var(--critical); border: 1px solid var(--critical); }
+.badge-inactive{ background: #1c2128;             color: var(--inactive); border: 1px solid var(--inactive); }
+.badge-maintenance { background: var(--warning-bg); color: var(--warning); border: 1px solid var(--warning); }
+
+/* Equipment card */
+.equip-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 18px 22px;
+    margin-bottom: 12px;
+    transition: border-color 0.15s;
+    cursor: pointer;
+}
+.equip-card:hover { border-color: var(--accent); }
+.equip-card .tag {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    color: var(--accent);
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+.equip-card .name {
+    font-family: var(--font-display);
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1.1;
+    margin: 4px 0;
+}
+.equip-card .meta {
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+
+/* Section header */
+.section-header {
+    border-left: 3px solid var(--accent);
+    padding-left: 12px;
+    margin-bottom: 20px;
+}
+.section-header h2 {
+    font-family: var(--font-display);
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: var(--text-primary);
+    margin: 0;
+}
+.section-header p {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin: 4px 0 0;
+}
+
+/* Sensor value display */
+.sensor-box {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 14px 18px;
+    text-align: center;
+}
+.sensor-box .label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+    font-weight: 600;
+}
+.sensor-box .value {
+    font-family: var(--font-mono);
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1.1;
+    margin: 4px 0;
+}
+.sensor-box .unit {
+    font-size: 12px;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+.sensor-box.ok     { border-color: var(--ok); }
+.sensor-box.warning{ border-color: var(--warning); }
+.sensor-box.critical{ border-color: var(--critical); }
+
+/* Raw data table */
+.raw-table {
+    font-family: var(--font-mono);
+    font-size: 12px;
+}
+
+/* Logo / Header */
+.app-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 0 16px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 20px;
+}
+.app-logo {
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: var(--accent);
+}
+.app-subtitle {
+    font-size: 11px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
