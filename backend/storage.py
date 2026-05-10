@@ -24,9 +24,30 @@ def _ensure_files():
         READINGS_FILE.write_text(json.dumps([], indent=2), encoding="utf-8")
 
 
+def _read_json_safe(filepath: Path) -> list:
+    """Read a JSON file safely, handling encoding issues and corruption."""
+    raw = filepath.read_bytes()  # read raw bytes — never fails on encoding
+    # Try UTF-8 first, then latin-1 as fallback (latin-1 decodes any byte sequence)
+    for enc in ("utf-8", "utf-8-sig", "latin-1"):
+        try:
+            text = raw.decode(enc)
+            data = json.loads(text)
+            # If it decoded with a fallback, rewrite it clean as UTF-8
+            if enc != "utf-8":
+                filepath.write_text(json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8")
+            return data
+        except (UnicodeDecodeError, json.JSONDecodeError):
+            continue
+    # File is unrecoverable — back it up and start fresh
+    backup = filepath.with_suffix(f".bak_{datetime.now().strftime('%Y%m%d%H%M%S')}.json")
+    filepath.rename(backup)
+    filepath.write_text(json.dumps([], indent=2), encoding="utf-8")
+    return []
+
+
 def _load_equipment() -> List[dict]:
     _ensure_files()
-    return json.loads(EQUIPMENT_FILE.read_text(encoding="utf-8"))
+    return _read_json_safe(EQUIPMENT_FILE)
 
 
 def _save_equipment(records: List[dict]):
@@ -35,7 +56,7 @@ def _save_equipment(records: List[dict]):
 
 def _load_readings() -> List[dict]:
     _ensure_files()
-    return json.loads(READINGS_FILE.read_text(encoding="utf-8"))
+    return _read_json_safe(READINGS_FILE)
 
 
 def _save_readings(records: List[dict]):
