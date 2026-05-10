@@ -19,27 +19,27 @@ READINGS_FILE = DATA_DIR / "readings.json"
 def _ensure_files():
     DATA_DIR.mkdir(exist_ok=True)
     if not EQUIPMENT_FILE.exists():
-        EQUIPMENT_FILE.write_text(json.dumps([], indent=2))
+        EQUIPMENT_FILE.write_text(json.dumps([], indent=2), encoding="utf-8")
     if not READINGS_FILE.exists():
-        READINGS_FILE.write_text(json.dumps([], indent=2))
+        READINGS_FILE.write_text(json.dumps([], indent=2), encoding="utf-8")
 
 
 def _load_equipment() -> List[dict]:
     _ensure_files()
-    return json.loads(EQUIPMENT_FILE.read_text())
+    return json.loads(EQUIPMENT_FILE.read_text(encoding="utf-8"))
 
 
 def _save_equipment(records: List[dict]):
-    EQUIPMENT_FILE.write_text(json.dumps(records, indent=2, ensure_ascii=False))
+    EQUIPMENT_FILE.write_text(json.dumps(records, indent=2, ensure_ascii=False), encoding="utf-8")
 
 
 def _load_readings() -> List[dict]:
     _ensure_files()
-    return json.loads(READINGS_FILE.read_text())
+    return json.loads(READINGS_FILE.read_text(encoding="utf-8"))
 
 
 def _save_readings(records: List[dict]):
-    READINGS_FILE.write_text(json.dumps(records, indent=2, ensure_ascii=False))
+    READINGS_FILE.write_text(json.dumps(records, indent=2, ensure_ascii=False), encoding="utf-8")
 
 
 # ── Equipment CRUD ──────────────────────────────────────────────────────────
