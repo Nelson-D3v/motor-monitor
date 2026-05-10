@@ -108,7 +108,7 @@ if filtered:
     df = pd.DataFrame(rows)
     display_df = df.drop(columns=["_id"])
 
-    # Style the dataframe
+    # Style the dataframe — usa .map() (pandas ≥ 2.0); fallback para .applymap() em versões antigas
     def color_status(val):
         colors = {
             "Ativo": "color: #22c55e",
@@ -117,7 +117,12 @@ if filtered:
         }
         return colors.get(val, "")
 
-    styled = display_df.style.applymap(color_status, subset=["Status"])
+    styler = display_df.style
+    styled = (
+        styler.map(color_status, subset=["Status"])
+        if hasattr(styler, "map")
+        else styler.applymap(color_status, subset=["Status"])
+    )
 
     st.dataframe(
         styled,
