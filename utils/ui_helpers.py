@@ -52,9 +52,10 @@ def render_sidebar():
         <hr style="border-color:#30363d; margin: 0 0 16px;">
         """, unsafe_allow_html=True)
 
-        st.markdown("**NAVEGAÇÃO**", help="Sprint 1 — Fundamentos do Ativo")
-        st.page_link("app.py",                label="🏠  Painel Principal")
+        st.markdown("**NAVEGAÇÃO**")
+        st.page_link("app.py",                  label="🏠  Painel Principal")
         st.page_link("pages/1_Equipamentos.py", label="⚙️  Equipamentos")
+        st.page_link("pages/4_Dashboard.py",    label="📈  Dashboard")
         st.page_link("pages/2_Cadastro.py",     label="📝  Cadastro / Edição")
         st.page_link("pages/3_Dados_Brutos.py", label="📊  Dados Brutos")
 
@@ -70,7 +71,7 @@ def render_sidebar():
         """, unsafe_allow_html=True)
 
         st.markdown("<hr style='border-color:#30363d; margin:16px 0;'>", unsafe_allow_html=True)
-        st.caption("v1.0.0 — Sprint 1")
+        st.caption("v2.0.0 — Sprint 2")
 
 
 def badge_html(status: str) -> str:

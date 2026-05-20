@@ -298,8 +298,8 @@ with tab4:
 st.markdown("""
 <div style="margin-top:24px; padding:12px 16px; background:#161b22; border-radius:6px;
             border:1px solid #21262d; font-size:11px; color:#484f58;">
-    💡 <strong style="color:#8b949e;">Sprint 1</strong> — Dados simulados para validação da interface.
-    Na Sprint 2, este módulo receberá dados reais via MQTT/API e aplicará modelos preditivos
-    para detecção de anomalias.
+    💡 <strong style="color:#8b949e;">Sprint 2</strong> — Para visualização com gráficos interativos
+    Plotly e navegação por Área/Planta, acesse o
+    <strong style="color:#f97316;">Dashboard</strong> no menu lateral.
 </div>
 """, unsafe_allow_html=True)

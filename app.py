@@ -106,14 +106,14 @@ st.markdown("<div style='margin-top:28px;'></div>", unsafe_allow_html=True)
 # ── Quick access ─────────────────────────────────────────────────────────────
 section_header("Acesso Rápido", "Navegue para as principais seções do sistema")
 
-col_a, col_b, col_c = st.columns(3)
+col_a, col_b, col_c, col_d = st.columns(4)
 
 with col_a:
     st.markdown("""
     <div style="background:#1c2128; border:1px solid #30363d; border-radius:10px;
-                padding:22px; height:130px;">
-        <div style="font-size:28px; margin-bottom:8px;">⚙️</div>
-        <div style="font-family:'Barlow Condensed',sans-serif; font-size:18px;
+                padding:20px; height:130px;">
+        <div style="font-size:26px; margin-bottom:8px;">⚙️</div>
+        <div style="font-family:'Barlow Condensed',sans-serif; font-size:17px;
                     font-weight:700; color:#e6edf3;">Equipamentos</div>
         <div style="font-size:12px; color:#8b949e; margin-top:4px;">
             Lista e consulta de ativos cadastrados
@@ -124,10 +124,24 @@ with col_a:
 
 with col_b:
     st.markdown("""
+    <div style="background:#1c2128; border:1px solid #f97316; border-radius:10px;
+                padding:20px; height:130px;">
+        <div style="font-size:26px; margin-bottom:8px;">📈</div>
+        <div style="font-family:'Barlow Condensed',sans-serif; font-size:17px;
+                    font-weight:700; color:#e6edf3;">Dashboard</div>
+        <div style="font-size:12px; color:#8b949e; margin-top:4px;">
+            Telemetria em tempo real e histórico
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
+    st.page_link("pages/4_Dashboard.py", label="→ Abrir Dashboard")
+
+with col_c:
+    st.markdown("""
     <div style="background:#1c2128; border:1px solid #30363d; border-radius:10px;
-                padding:22px; height:130px;">
-        <div style="font-size:28px; margin-bottom:8px;">📝</div>
-        <div style="font-family:'Barlow Condensed',sans-serif; font-size:18px;
+                padding:20px; height:130px;">
+        <div style="font-size:26px; margin-bottom:8px;">📝</div>
+        <div style="font-family:'Barlow Condensed',sans-serif; font-size:17px;
                     font-weight:700; color:#e6edf3;">Novo Cadastro</div>
         <div style="font-size:12px; color:#8b949e; margin-top:4px;">
             Registrar novo ativo no sistema
@@ -136,15 +150,15 @@ with col_b:
     """, unsafe_allow_html=True)
     st.page_link("pages/2_Cadastro.py", label="→ Cadastrar Equipamento")
 
-with col_c:
+with col_d:
     st.markdown("""
     <div style="background:#1c2128; border:1px solid #30363d; border-radius:10px;
-                padding:22px; height:130px;">
-        <div style="font-size:28px; margin-bottom:8px;">📊</div>
-        <div style="font-family:'Barlow Condensed',sans-serif; font-size:18px;
-                    font-weight:700; color:#e6edf3;">Dados de Sensores</div>
+                padding:20px; height:130px;">
+        <div style="font-size:26px; margin-bottom:8px;">📊</div>
+        <div style="font-family:'Barlow Condensed',sans-serif; font-size:17px;
+                    font-weight:700; color:#e6edf3;">Dados Brutos</div>
         <div style="font-size:12px; color:#8b949e; margin-top:4px;">
-            Visualizar leituras convertidas dos ativos
+            Leituras convertidas dos sensores
         </div>
     </div>
     """, unsafe_allow_html=True)

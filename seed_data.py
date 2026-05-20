@@ -1,6 +1,15 @@
 """
 Seed script — generates realistic mock data for demo/development.
-Run: python seed_data.py
+
+Sprint 2 update:
+  - 7 days of readings at 30-min intervals (336 readings per motor)
+  - MOT-001: progressive bearing-overheating fault scenario
+  - MOT-003 relocated to Bloco A for area-navigation demo
+  - --force flag clears existing data before seeding
+
+Run:
+    python seed_data.py            # skip existing
+    python seed_data.py --force    # clear all and regenerate
 """
 
 import sys
@@ -60,61 +69,117 @@ SEED_EQUIPMENT = [
         "frame": "IEC 180L",
         "protection_class": "IP54",
         "insulation_class": "F",
-        "installation_location": "Transportador — Esteira 3",
+        "installation_location": "Transportador — Bloco A",
         "responsible_technician": "Ricardo Souza",
-        "notes": "",
+        "notes": "Transportador de esteira — saída da linha de montagem.",
         "status": "maintenance",
     },
 ]
 
 
-def generate_readings(equipment: Equipment, n: int = 48):
-    """Generate n mock sensor readings for an equipment (last 24h, 30-min intervals)."""
-    readings = []
-    now = datetime.now()
+def _noise(x: float, pct: float = 0.05) -> float:
+    return max(0.0, x * (1.0 + random.uniform(-pct, pct)))
 
-    # Determine baseline raw values from nominal
-    # Voltage: nominal V maps back to ADC
+
+def _spike(x: float, chance: float = 0.05, magnitude: float = 1.15) -> float:
+    return x * magnitude if random.random() < chance else x
+
+
+def generate_readings(equipment: Equipment, days: int = 7, interval_min: int = 30) -> list:
+    """
+    Generate sensor readings for the given equipment over `days` days.
+
+    MOT-001 gets a progressive bearing-overheating fault scenario:
+      - Days 0-4  : Normal operation (~40-60 °C)
+      - Day  4-5  : Temperature rising into WARNING zone (~60-82 °C)
+      - Day  5-6  : Escalating WARNING → CRITICAL (~82-102 °C) + vibration rise
+      - Day  6-7  : Full CRITICAL (~100-115 °C), vibration WARNING
+    """
     from utils.unit_converter import ADC_RESOLUTION, VOLTAGE_SENSOR_MAX_V, CURRENT_SENSOR_MAX_A
-    raw_v_nominal = (equipment.voltage_v / VOLTAGE_SENSOR_MAX_V) * ADC_RESOLUTION
-    raw_a_nominal = (equipment.current_a / CURRENT_SENSOR_MAX_A) * ADC_RESOLUTION
-    raw_rpm_nominal = equipment.rpm / 60.0   # pulses/sec
 
-    for i in range(n):
-        ts = (now - timedelta(minutes=30 * (n - i))).isoformat()
-        # Add ±5% noise, occasional spikes
-        noise = lambda x, pct=0.05: x * (1 + random.uniform(-pct, pct))
-        spike = lambda x: x * random.choice([1] * 19 + [1.15])  # 5% chance spike
+    raw_v_nom   = (equipment.voltage_v / VOLTAGE_SENSOR_MAX_V) * ADC_RESOLUTION
+    raw_a_nom   = (equipment.current_a / CURRENT_SENSOR_MAX_A) * ADC_RESOLUTION
+    raw_rpm_nom = equipment.rpm / 60.0
+
+    # Reference end-time: 2026-05-20 18:00 (today, Sprint 2 demo date)
+    now = datetime(2026, 5, 20, 18, 0, 0)
+    total = int(days * 24 * 60 / interval_min)   # 336 readings for 7 days
+
+    readings = []
+    for i in range(total):
+        ts = (now - timedelta(minutes=interval_min * (total - i))).isoformat()
+        day_offset = i / (24 * 60 / interval_min)   # 0.0 … ~6.98
+
+        # ── Default: normal temperature & vibration ──────────────────────────
+        # raw_temp ~1700  →  -20 + (1700/4095)*170 ≈ 50.6 °C
+        raw_temp = _noise(1700, 0.10)
+        raw_vibr = _noise(410,  0.20)   # ~1.6 g
+
+        # ── MOT-001 fault scenario ────────────────────────────────────────────
+        if equipment.tag == "MOT-001":
+            if day_offset >= 6.0:
+                # CRITICAL zone (day 6-7): temp 100-115 °C, vibration WARNING
+                fault_p = (day_offset - 6.0) / 1.0   # 0 → 1
+                raw_temp = _noise(2900 + fault_p * 300, 0.06)   # 2900 → 3200
+                raw_vibr = _noise(900  + fault_p * 300, 0.12)   # 900  → 1200
+            elif day_offset >= 5.0:
+                # Escalating WARNING → CRITICAL (day 5-6): temp 82-102 °C
+                fault_p = (day_offset - 5.0) / 1.0
+                raw_temp = _noise(2400 + fault_p * 500, 0.07)   # 2400 → 2900
+                raw_vibr = _noise(550  + fault_p * 350, 0.15)   # 550  → 900
+            elif day_offset >= 4.0:
+                # Rising WARNING (day 4-5): temp 60-82 °C
+                fault_p = (day_offset - 4.0) / 1.0
+                raw_temp = _noise(1900 + fault_p * 500, 0.08)   # 1900 → 2400
+                raw_vibr = _noise(430  + fault_p * 120, 0.15)   # 430  → 550
+
+        # ── MOT-003 slight voltage sag (explains maintenance status) ─────────
+        if equipment.tag == "MOT-003" and day_offset >= 5.5:
+            raw_v_nom_local = raw_v_nom * 0.88   # ~12 % voltage sag → WARNING
+        else:
+            raw_v_nom_local = raw_v_nom
 
         readings.append(SensorReading(
             equipment_id=equipment.id,
             timestamp=ts,
-            raw_voltage=round(spike(noise(raw_v_nominal)), 1),
-            raw_current=round(noise(raw_a_nominal, 0.08), 1),
-            raw_temperature=round(noise(1800, 0.12), 1),   # ~65°C
-            raw_vibration=round(noise(410, 0.20), 1),      # ~1.6g
-            raw_rpm=round(noise(raw_rpm_nominal, 0.03), 2),
+            raw_voltage=round(_spike(_noise(raw_v_nom_local if equipment.tag == "MOT-003" else raw_v_nom, 0.05)), 1),
+            raw_current=round(_noise(raw_a_nom, 0.08), 1),
+            raw_temperature=round(raw_temp, 1),
+            raw_vibration=round(raw_vibr, 1),
+            raw_rpm=round(_noise(raw_rpm_nom, 0.03), 2),
         ))
     return readings
 
 
-def seed():
-    print("🌱  Seeding demo data...")
-    existing = {e.tag for e in storage.get_all_equipment()}
+def seed(force: bool = False):
+    if force:
+        print("⚠️   Force mode — clearing all data...")
+        from pathlib import Path
+        import json
+        data_dir = Path(__file__).parent / "data"
+        data_dir.mkdir(exist_ok=True)
+        (data_dir / "equipment.json").write_text("[]", encoding="utf-8")
+        (data_dir / "readings.json").write_text("[]", encoding="utf-8")
+
+    print("🌱  Seeding demo data (Sprint 2)...")
+    existing = {e.tag: e for e in storage.get_all_equipment()}
 
     for data in SEED_EQUIPMENT:
-        if data["tag"] in existing:
-            print(f"  ⚠️  {data['tag']} already exists — skipping.")
+        tag = data["tag"]
+
+        if tag in existing and not force:
+            print(f"  ⚠️   {tag} already exists — skipping.")
             continue
+
         equip = Equipment(**data)
         storage.save_equipment(equip)
-        readings = generate_readings(equip)
+        readings = generate_readings(equip, days=7, interval_min=30)
         for r in readings:
             storage.save_reading(r)
-        print(f"  ✅  {data['tag']} created with {len(readings)} readings.")
+        print(f"  ✅  {tag}  ({data['manufacturer']} {data['model']})  — {len(readings)} readings.")
 
     print("✅  Seed complete.")
 
 
 if __name__ == "__main__":
-    seed()
+    seed(force="--force" in sys.argv)

@@ -151,97 +151,130 @@ if filtered:
             except Exception:
                 created = updated = "—"
 
-            st.markdown(f"""
-            <div style="background:#1c2128; border:1px solid #f97316; border-radius:12px;
-                        padding:24px 28px; margin-top:12px;">
+            notes_html = ""
+            if eq.notes:
+                notes_html = (
+                    "<div style='background:#161b22; border-radius:6px; "
+                    "padding:12px 14px; margin-bottom:16px;'>"
+                    "<div style='font-size:11px; text-transform:uppercase; "
+                    "letter-spacing:0.08em; color:#484f58; font-weight:600; "
+                    "margin-bottom:4px;'>Observações</div>"
+                    "<div style='font-size:13px; color:#8b949e;'>"
+                    + eq.notes +
+                    "</div></div>"
+                )
 
-                <!-- Header -->
-                <div style="display:flex; justify-content:space-between; align-items:flex-start;
-                            border-bottom:1px solid #30363d; padding-bottom:16px; margin-bottom:20px;">
-                    <div>
-                        <div style="font-family:'JetBrains Mono',monospace; font-size:13px;
-                                    color:#f97316; font-weight:700; letter-spacing:0.05em;">{eq.tag}</div>
-                        <div style="font-family:'Barlow Condensed',sans-serif; font-size:24px;
-                                    font-weight:700; color:#e6edf3; margin:4px 0;">
-                            {eq.manufacturer} {eq.model}</div>
-                        <div style="font-size:13px; color:#8b949e;">
-                            📍 {eq.installation_location}
+            st.markdown(
+                f"""
+                <div style="background:#1c2128; border:1px solid #f97316;
+                            border-radius:12px; padding:24px 28px; margin-top:12px;">
+                    <div style="display:flex; justify-content:space-between;
+                                align-items:flex-start; border-bottom:1px solid #30363d;
+                                padding-bottom:16px; margin-bottom:20px;">
+                        <div>
+                            <div style="font-family:'JetBrains Mono',monospace;
+                                        font-size:13px; color:#f97316; font-weight:700;
+                                        letter-spacing:0.05em;">{eq.tag}</div>
+                            <div style="font-family:'Barlow Condensed',sans-serif;
+                                        font-size:24px; font-weight:700; color:#e6edf3;
+                                        margin:4px 0;">{eq.manufacturer} {eq.model}</div>
+                            <div style="font-size:13px; color:#8b949e;">
+                                📍 {eq.installation_location}
+                            </div>
+                        </div>
+                        <div style="text-align:right;">
+                            {badge}
+                            <div style="font-size:11px; color:#484f58; margin-top:8px;">
+                                ID: {eq.id[:8]}…
+                            </div>
                         </div>
                     </div>
-                    <div style="text-align:right;">
-                        {badge}
-                        <div style="font-size:11px; color:#484f58; margin-top:8px;">
-                            ID: <code style="color:#484f58;">{eq.id[:8]}…</code>
+                    <div style="display:grid; grid-template-columns:repeat(4,1fr);
+                                gap:16px; margin-bottom:20px;">
+                        <div>
+                            <div style="font-size:10px; text-transform:uppercase;
+                                        letter-spacing:0.08em; color:#484f58;
+                                        font-weight:600;">Potência</div>
+                            <div style="font-family:'JetBrains Mono',monospace;
+                                        font-size:20px; font-weight:700;
+                                        color:#e6edf3;">{eq.power_kw}
+                                <span style="font-size:13px;color:#8b949e;">kW</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div style="font-size:10px; text-transform:uppercase;
+                                        letter-spacing:0.08em; color:#484f58;
+                                        font-weight:600;">Tensão Nominal</div>
+                            <div style="font-family:'JetBrains Mono',monospace;
+                                        font-size:20px; font-weight:700;
+                                        color:#e6edf3;">{eq.voltage_v}
+                                <span style="font-size:13px;color:#8b949e;">V</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div style="font-size:10px; text-transform:uppercase;
+                                        letter-spacing:0.08em; color:#484f58;
+                                        font-weight:600;">Corrente Nominal</div>
+                            <div style="font-family:'JetBrains Mono',monospace;
+                                        font-size:20px; font-weight:700;
+                                        color:#e6edf3;">{eq.current_a}
+                                <span style="font-size:13px;color:#8b949e;">A</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div style="font-size:10px; text-transform:uppercase;
+                                        letter-spacing:0.08em; color:#484f58;
+                                        font-weight:600;">Velocidade</div>
+                            <div style="font-family:'JetBrains Mono',monospace;
+                                        font-size:20px; font-weight:700;
+                                        color:#e6edf3;">{eq.rpm}
+                                <span style="font-size:13px;color:#8b949e;">RPM</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <!-- Technical specs grid -->
-                <div style="display:grid; grid-template-columns: repeat(4,1fr); gap:16px; margin-bottom:20px;">
-                    <div>
-                        <div style="font-size:10px; text-transform:uppercase; letter-spacing:0.08em;
-                                    color:#484f58; font-weight:600;">Potência</div>
-                        <div style="font-family:'JetBrains Mono',monospace; font-size:20px;
-                                    font-weight:700; color:#e6edf3;">{eq.power_kw} <span style="font-size:13px;color:#8b949e;">kW</span></div>
+                    <div style="display:grid; grid-template-columns:repeat(4,1fr);
+                                gap:16px; border-top:1px solid #21262d;
+                                padding-top:16px; margin-bottom:20px;">
+                        <div>
+                            <div style="font-size:10px; text-transform:uppercase;
+                                        letter-spacing:0.08em; color:#484f58;
+                                        font-weight:600;">Frequência</div>
+                            <div style="font-size:15px; font-weight:600;
+                                        color:#e6edf3;">{eq.frequency_hz} Hz</div>
+                        </div>
+                        <div>
+                            <div style="font-size:10px; text-transform:uppercase;
+                                        letter-spacing:0.08em; color:#484f58;
+                                        font-weight:600;">Carcaça</div>
+                            <div style="font-size:15px; font-weight:600;
+                                        color:#e6edf3;">{eq.frame}</div>
+                        </div>
+                        <div>
+                            <div style="font-size:10px; text-transform:uppercase;
+                                        letter-spacing:0.08em; color:#484f58;
+                                        font-weight:600;">Proteção / Isolamento</div>
+                            <div style="font-size:15px; font-weight:600;
+                                        color:#e6edf3;">
+                                {eq.protection_class} / Classe {eq.insulation_class}
+                            </div>
+                        </div>
+                        <div>
+                            <div style="font-size:10px; text-transform:uppercase;
+                                        letter-spacing:0.08em; color:#484f58;
+                                        font-weight:600;">Responsável Técnico</div>
+                            <div style="font-size:15px; font-weight:600;
+                                        color:#e6edf3;">{eq.responsible_technician}</div>
+                        </div>
                     </div>
-                    <div>
-                        <div style="font-size:10px; text-transform:uppercase; letter-spacing:0.08em;
-                                    color:#484f58; font-weight:600;">Tensão Nominal</div>
-                        <div style="font-family:'JetBrains Mono',monospace; font-size:20px;
-                                    font-weight:700; color:#e6edf3;">{eq.voltage_v} <span style="font-size:13px;color:#8b949e;">V</span></div>
-                    </div>
-                    <div>
-                        <div style="font-size:10px; text-transform:uppercase; letter-spacing:0.08em;
-                                    color:#484f58; font-weight:600;">Corrente Nominal</div>
-                        <div style="font-family:'JetBrains Mono',monospace; font-size:20px;
-                                    font-weight:700; color:#e6edf3;">{eq.current_a} <span style="font-size:13px;color:#8b949e;">A</span></div>
-                    </div>
-                    <div>
-                        <div style="font-size:10px; text-transform:uppercase; letter-spacing:0.08em;
-                                    color:#484f58; font-weight:600;">Velocidade</div>
-                        <div style="font-family:'JetBrains Mono',monospace; font-size:20px;
-                                    font-weight:700; color:#e6edf3;">{eq.rpm} <span style="font-size:13px;color:#8b949e;">RPM</span></div>
-                    </div>
-                </div>
-
-                <!-- Secondary specs -->
-                <div style="display:grid; grid-template-columns: repeat(4,1fr); gap:16px;
-                            border-top:1px solid #21262d; padding-top:16px; margin-bottom:20px;">
-                    <div>
-                        <div style="font-size:10px; text-transform:uppercase; letter-spacing:0.08em;
-                                    color:#484f58; font-weight:600;">Frequência</div>
-                        <div style="font-size:15px; font-weight:600; color:#e6edf3;">{eq.frequency_hz} Hz</div>
-                    </div>
-                    <div>
-                        <div style="font-size:10px; text-transform:uppercase; letter-spacing:0.08em;
-                                    color:#484f58; font-weight:600;">Carcaça</div>
-                        <div style="font-size:15px; font-weight:600; color:#e6edf3;">{eq.frame}</div>
-                    </div>
-                    <div>
-                        <div style="font-size:10px; text-transform:uppercase; letter-spacing:0.08em;
-                                    color:#484f58; font-weight:600;">Proteção / Isolamento</div>
-                        <div style="font-size:15px; font-weight:600; color:#e6edf3;">
-                            {eq.protection_class} / Classe {eq.insulation_class}</div>
-                    </div>
-                    <div>
-                        <div style="font-size:10px; text-transform:uppercase; letter-spacing:0.08em;
-                                    color:#484f58; font-weight:600;">Responsável Técnico</div>
-                        <div style="font-size:15px; font-weight:600; color:#e6edf3;">{eq.responsible_technician}</div>
+                    {notes_html}
+                    <div style="display:flex; gap:24px; font-size:11px; color:#484f58;">
+                        <div>Cadastrado: {created}</div>
+                        <div>Última atualização: {updated}</div>
                     </div>
                 </div>
-
-                {"<div style='background:#161b22; border-radius:6px; padding:12px 14px; margin-bottom:16px;'>" +
-                 "<div style='font-size:11px;text-transform:uppercase;letter-spacing:0.08em;color:#484f58;font-weight:600;margin-bottom:4px;'>Observações</div>" +
-                 f"<div style='font-size:13px;color:#8b949e;'>{eq.notes}</div></div>"
-                 if eq.notes else ""}
-
-                <!-- Footer -->
-                <div style="display:flex; gap:24px; font-size:11px; color:#484f58;">
-                    <div>Cadastrado: {created}</div>
-                    <div>Última atualização: {updated}</div>
-                </div>
-            </div>
-            """, unsafe_allow_html=True)
+                """,
+                unsafe_allow_html=True,
+            )
 
             st.markdown("<div style='margin-top:12px;'></div>", unsafe_allow_html=True)
             col_edit, col_data, col_del = st.columns([1, 1, 4])
