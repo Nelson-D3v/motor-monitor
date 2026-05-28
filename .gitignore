@@ -1,5 +1,4 @@
-data/ 
-__pycache__/ 
-*.pyc 
-.env 
-*.zip 
+__pycache__/
+*.pyc
+.env
+*.zip
