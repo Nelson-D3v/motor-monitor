@@ -62,7 +62,7 @@ with col_sel:
     selected_label = st.selectbox("Selecionar Equipamento", eq_labels,
                                    index=default_idx, label_visibility="collapsed")
 with col_gen:
-    gen_btn = st.button("🔄  Gerar Dados Demo", use_container_width=True,
+    gen_btn = st.button("🔄  Gerar Dados Demo", width="stretch",
                         help="Gera leituras simuladas para demonstração")
 
 eq = eq_map[selected_label]
@@ -239,7 +239,7 @@ with tab3:
 with tab4:
     # Full table with raw + converted values
     st.markdown("**Dados Convertidos — Unidades de Engenharia**")
-    st.dataframe(df.reset_index(), use_container_width=True, height=320,
+    st.dataframe(df.reset_index(), width="stretch", height=320,
                  column_config={
                      "Timestamp": st.column_config.DatetimeColumn("Data/Hora", format="DD/MM/YY HH:mm"),
                      "Tensão (V)": st.column_config.NumberColumn(format="%.1f V"),
@@ -278,7 +278,7 @@ with tab4:
                 "Pulsos/s (RPM)": r.raw_rpm,
             })
         df_raw = pd.DataFrame(raw_data).set_index("Timestamp")
-        st.dataframe(df_raw.reset_index(), use_container_width=True, height=280)
+        st.dataframe(df_raw.reset_index(), width="stretch", height=280)
 
         # Conversion table reference
         st.markdown("<div style='margin-top:12px;'></div>", unsafe_allow_html=True)

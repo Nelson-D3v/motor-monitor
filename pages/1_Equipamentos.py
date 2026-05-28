@@ -57,7 +57,7 @@ with col_mfr:
     selected_mfr = st.selectbox("Fabricante", mfr_options, label_visibility="collapsed")
 
 with col_btn:
-    if st.button("➕ Novo", use_container_width=True, type="primary"):
+    if st.button("➕ Novo", width="stretch", type="primary"):
         st.switch_page("pages/2_Cadastro.py")
 
 # ── Apply filters ─────────────────────────────────────────────────────────────
@@ -126,7 +126,7 @@ if filtered:
 
     st.dataframe(
         styled,
-        use_container_width=True,
+        width="stretch",
         height=min(400, 80 + len(filtered) * 35),
         hide_index=True,
     )
@@ -280,12 +280,12 @@ if filtered:
             col_edit, col_data, col_del = st.columns([1, 1, 4])
 
             with col_edit:
-                if st.button("✏️  Editar Cadastro", use_container_width=True):
+                if st.button("✏️  Editar Cadastro", width="stretch"):
                     st.session_state["edit_equipment_id"] = eq.id
                     st.switch_page("pages/2_Cadastro.py")
 
             with col_data:
-                if st.button("📊  Ver Dados do Sensor", use_container_width=True):
+                if st.button("📊  Ver Dados do Sensor", width="stretch"):
                     st.session_state["sensor_equipment_id"] = eq.id
                     st.switch_page("pages/3_Dados_Brutos.py")
 

@@ -109,7 +109,7 @@ with col_tag:
 eq = tag_options[selected_label]
 
 with col_btn:
-    gen_btn = st.button("⚡ Simular", use_container_width=True,
+    gen_btn = st.button("⚡ Simular", width="stretch",
                         help="Gera uma nova leitura simulada e salva no histórico")
 
 # ── Simulate a new reading on demand ─────────────────────────────────────────
@@ -298,7 +298,7 @@ def _layout(title: str, y_label: str) -> dict:
         xaxis=dict(gridcolor=_GRID, linecolor="#30363d",
                    tickfont=dict(size=10)),
         yaxis=dict(gridcolor=_GRID, linecolor="#30363d",
-                   title=y_label, titlefont=dict(size=11)),
+                   title=dict(text=y_label, font=dict(size=11))),
         margin=dict(l=55, r=10, t=40, b=35),
         showlegend=False,
         height=230,
@@ -388,14 +388,14 @@ fig_pwr.update_layout(**_layout("Potência Estimada", "kW"))
 cfg = {"displayModeBar": False}
 
 row1 = st.columns(3)
-with row1[0]: st.plotly_chart(fig_temp, use_container_width=True, config=cfg)
-with row1[1]: st.plotly_chart(fig_vibr, use_container_width=True, config=cfg)
-with row1[2]: st.plotly_chart(fig_curr, use_container_width=True, config=cfg)
+with row1[0]: st.plotly_chart(fig_temp, width="stretch", config=cfg)
+with row1[1]: st.plotly_chart(fig_vibr, width="stretch", config=cfg)
+with row1[2]: st.plotly_chart(fig_curr, width="stretch", config=cfg)
 
 row2 = st.columns(3)
-with row2[0]: st.plotly_chart(fig_volt, use_container_width=True, config=cfg)
-with row2[1]: st.plotly_chart(fig_rpm,  use_container_width=True, config=cfg)
-with row2[2]: st.plotly_chart(fig_pwr,  use_container_width=True, config=cfg)
+with row2[0]: st.plotly_chart(fig_volt, width="stretch", config=cfg)
+with row2[1]: st.plotly_chart(fig_rpm,  width="stretch", config=cfg)
+with row2[2]: st.plotly_chart(fig_pwr,  width="stretch", config=cfg)
 
 # ── Motor nameplate ───────────────────────────────────────────────────────────
 st.markdown("<div style='margin-top:28px;'></div>", unsafe_allow_html=True)

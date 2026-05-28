@@ -211,10 +211,10 @@ with st.form("equipment_form", clear_on_submit=False):
         submitted = st.form_submit_button(
             "💾  Salvar Cadastro" if not is_edit else "💾  Atualizar",
             type="primary",
-            use_container_width=True,
+            width="stretch",
         )
     with col_cancel:
-        cancelled = st.form_submit_button("✕  Cancelar", use_container_width=True)
+        cancelled = st.form_submit_button("✕  Cancelar", width="stretch")
 
 # ── Form submission handling ───────────────────────────────────────────────────
 if submitted:
