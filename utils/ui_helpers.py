@@ -5,6 +5,7 @@ Keeps page files clean and consistent.
 
 import streamlit as st
 from pathlib import Path
+from datetime import datetime
 
 CSS_PATH = Path(__file__).parent.parent / "assets" / "style.css"
 
@@ -53,7 +54,7 @@ def render_sidebar():
         """, unsafe_allow_html=True)
 
         st.markdown("**NAVEGAÇÃO**")
-        st.page_link("app.py",                  label="🏠  Painel Principal")
+        st.page_link("app.py",                  label="🚨  Painel de Alertas")
         st.page_link("pages/1_Equipamentos.py", label="⚙️  Equipamentos")
         st.page_link("pages/4_Dashboard.py",    label="📈  Dashboard")
         st.page_link("pages/2_Cadastro.py",     label="📝  Cadastro / Edição")
@@ -63,15 +64,14 @@ def render_sidebar():
         st.markdown("**PRÓXIMAS SPRINTS**")
         st.markdown("""
         <div style="color:#484f58; font-size:12px; line-height:1.8;">
-            🔒 &nbsp;Análise Preditiva<br>
-            🔒 &nbsp;Alertas & Notificações<br>
-            🔒 &nbsp;Relatórios<br>
-            🔒 &nbsp;Inteligência Artificial
+            🔒 &nbsp;Relatórios Gerenciais<br>
+            🔒 &nbsp;Manutenção Preditiva Avançada<br>
+            🔒 &nbsp;Integração IoT em Tempo Real
         </div>
         """, unsafe_allow_html=True)
 
         st.markdown("<hr style='border-color:#30363d; margin:16px 0;'>", unsafe_allow_html=True)
-        st.caption("v2.0.0 — Sprint 2")
+        st.caption("v3.0.0 — Sprint 3")
 
 
 def badge_html(status: str) -> str:
@@ -101,5 +101,53 @@ def render_sensor_box(label: str, value: str, unit: str, status: str = "ok"):
         <div class="label">{label}</div>
         <div class="value" style="color:{color};">{value}</div>
         <div class="unit">{unit}</div>
+    </div>
+    """, unsafe_allow_html=True)
+
+
+def render_alert_card(alert):
+    """Reusable alert card: severity badge, technical message and NLP summary."""
+    from backend.models import ALERT_SEVERITY
+    cfg = ALERT_SEVERITY.get(alert.severity, ALERT_SEVERITY["warning"])
+    try:
+        ts = datetime.fromisoformat(alert.created_at).strftime("%d/%m/%Y %H:%M")
+    except Exception:
+        ts = alert.created_at
+
+    st.markdown(f"""
+    <div class="alert-card" style="border-left-color:{cfg['color']};">
+        <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:12px;">
+            <div style="flex:1;">
+                <div style="display:flex; align-items:center; gap:8px;">
+                    <span class="badge {cfg['badge']}">{cfg['icon']} {cfg['label']}</span>
+                    <span style="font-family:'JetBrains Mono',monospace; font-size:12px;
+                                color:#8b949e; font-weight:700;">{alert.equipment_tag}</span>
+                    <span style="font-size:12px; color:#484f58;">· {alert.parameter}</span>
+                </div>
+                <div style="font-size:14px; color:#e6edf3; font-weight:600; margin-top:8px;">
+                    {alert.message}
+                </div>
+                <div class="nlp-summary">
+                    <span class="nlp-tag">NLP · resumo automático</span>
+                    {alert.summary}
+                </div>
+            </div>
+            <div style="font-size:11px; color:#484f58; white-space:nowrap;">{ts}</div>
+        </div>
+    </div>
+    """, unsafe_allow_html=True)
+
+
+def render_recommendation_card(alert):
+    """Decision-support card: suggested first action for the maintenance team."""
+    from backend.models import ALERT_SEVERITY
+    cfg = ALERT_SEVERITY.get(alert.severity, ALERT_SEVERITY["warning"])
+    st.markdown(f"""
+    <div class="recommendation-card">
+        <div style="font-size:11px; text-transform:uppercase; letter-spacing:0.08em;
+                    color:{cfg['color']}; font-weight:700; margin-bottom:6px;">
+            🛠️ Ação Recomendada · {alert.equipment_tag}
+        </div>
+        <div style="font-size:13px; color:#c9d1d9; line-height:1.5;">{alert.recommendation}</div>
     </div>
     """, unsafe_allow_html=True)

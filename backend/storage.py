@@ -9,11 +9,12 @@ from pathlib import Path
 from typing import List, Optional
 from datetime import datetime
 
-from backend.models import Equipment, SensorReading
+from backend.models import Equipment, SensorReading, Alert
 
 DATA_DIR = Path(__file__).parent.parent / "data"
 EQUIPMENT_FILE = DATA_DIR / "equipment.json"
 READINGS_FILE = DATA_DIR / "readings.json"
+ALERTS_FILE = DATA_DIR / "alerts.json"
 
 
 def _ensure_files():
@@ -22,6 +23,8 @@ def _ensure_files():
         EQUIPMENT_FILE.write_text(json.dumps([], indent=2), encoding="utf-8")
     if not READINGS_FILE.exists():
         READINGS_FILE.write_text(json.dumps([], indent=2), encoding="utf-8")
+    if not ALERTS_FILE.exists():
+        ALERTS_FILE.write_text(json.dumps([], indent=2), encoding="utf-8")
 
 
 def _read_json_safe(filepath: Path) -> list:
@@ -135,3 +138,41 @@ def save_reading(reading: SensorReading) -> SensorReading:
 def delete_readings_for_equipment(equipment_id: str):
     records = _load_readings()
     _save_readings([r for r in records if r["equipment_id"] != equipment_id])
+
+
+# ── Alerts / Event history ──────────────────────────────────────────────────
+
+def _load_alerts() -> List[dict]:
+    _ensure_files()
+    return _read_json_safe(ALERTS_FILE)
+
+
+def _save_alerts(records: List[dict]):
+    ALERTS_FILE.write_text(json.dumps(records, indent=2, ensure_ascii=False), encoding="utf-8")
+
+
+def get_all_alerts() -> List[Alert]:
+    return [Alert.from_dict(a) for a in _load_alerts()]
+
+
+def save_alert(alert: Alert) -> Alert:
+    """Append a new alert to the event history log."""
+    records = _load_alerts()
+    records.append(alert.to_dict())
+    _save_alerts(records)
+    return alert
+
+
+def update_alert_status(alert_id: str, status: str) -> bool:
+    records = _load_alerts()
+    for r in records:
+        if r["id"] == alert_id:
+            r["status"] = status
+            _save_alerts(records)
+            return True
+    return False
+
+
+def delete_alerts_for_equipment(equipment_id: str):
+    records = _load_alerts()
+    _save_alerts([r for r in records if r["equipment_id"] != equipment_id])

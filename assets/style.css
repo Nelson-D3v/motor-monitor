@@ -199,6 +199,46 @@ html, body, [class*="css"] {
 .sensor-box.warning{ border-color: var(--warning); }
 .sensor-box.critical{ border-color: var(--critical); }
 
+/* Alert card */
+.alert-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--warning);
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-bottom: 14px;
+}
+
+/* NLP summary block inside an alert card */
+.nlp-summary {
+    background: var(--bg-secondary);
+    border: 1px dashed var(--border);
+    border-radius: 6px;
+    padding: 10px 12px;
+    margin-top: 10px;
+    font-size: 12.5px;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+.nlp-tag {
+    display: inline-block;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #a78bfa;
+    font-weight: 700;
+    margin-right: 6px;
+}
+
+/* Decision-support / recommendation card */
+.recommendation-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin-bottom: 12px;
+}
+
 /* Raw data table */
 .raw-table {
     font-family: var(--font-mono);

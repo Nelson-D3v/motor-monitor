@@ -77,3 +77,40 @@ MANUFACTURERS = [
     "WEG", "ABB", "Siemens", "Nidec", "Voges", "SEW-Eurodrive",
     "Baldor", "Leroy-Somer", "Toshiba", "Outro"
 ]
+
+
+@dataclass
+class Alert:
+    """
+    Represents an operational alert/event raised by the analytics layer
+    (threshold rules today; ML anomaly detection and NLP summarization
+    are meant to plug in behind AlertService without changing this shape).
+    """
+    equipment_id: str
+    equipment_tag: str
+    parameter: str            # e.g. "Temperatura", "Vibração", "Corrente"...
+    severity: str              # warning | critical
+    value: float
+    unit: str
+    nominal: float
+    message: str               # short technical message
+    summary: str                # NLP-generated narrative (stub today)
+    recommendation: str         # suggested action for maintenance team
+    id: str = field(default_factory=lambda: str(uuid.uuid4()))
+    created_at: str = field(default_factory=lambda: datetime.now().isoformat())
+    status: str = "open"        # open | acknowledged | resolved
+
+    def to_dict(self) -> dict:
+        return asdict(self)
+
+    @classmethod
+    def from_dict(cls, data: dict) -> "Alert":
+        return cls(**data)
+
+
+# Alert severity display config — same semantic colors used across the app
+ALERT_SEVERITY = {
+    "critical": {"label": "Crítico",  "color": "#ef4444", "icon": "🚨", "badge": "badge-critical"},
+    "warning":  {"label": "Atenção",  "color": "#f59e0b", "icon": "⚠️", "badge": "badge-warning"},
+    "ok":       {"label": "Normal",   "color": "#22c55e", "icon": "✅", "badge": "badge-ok"},
+}
