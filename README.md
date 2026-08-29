@@ -1,7 +1,22 @@
 # ⚡ MotorSync — Monitor de Ativos Industriais
-### Sprint 1: Fundamentos do Ativo e Interface de Cadastro
+### Sprint 3: Inteligência Operacional — Painel de Alertas e Estados
 
-> Sistema web para cadastro técnico, consulta e visualização de dados de motores e equipamentos industriais.
+> Sistema web para cadastro técnico, consulta, visualização de telemetria e
+> acompanhamento proativo de alertas de motores e equipamentos industriais.
+
+🎥 **Vídeo de demonstração:** https://youtu.be/_uA0AdFhiPQ
+📦 **Repositório:** https://github.com/Nelson-D3v/motor-monitor
+🔗 **App online:** _adicionar URL do Streamlit Community Cloud_
+
+---
+
+## ✅ Sprint 3 — Entregáveis
+
+| Entregável | Onde |
+|---|---|
+| Código-fonte (GitHub) | branch `main` deste repositório |
+| Protótipo funcional | app publicada no Streamlit Community Cloud (link acima) |
+| Vídeo de demonstração | https://youtu.be/_uA0AdFhiPQ |
 
 ---
 
